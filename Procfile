@@ -1,0 +1,1 @@
+web: waterwise-karnal.wsgi
