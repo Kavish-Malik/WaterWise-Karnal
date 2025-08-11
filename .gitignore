@@ -1,23 +1,49 @@
+# ======================
 # Python
+# ======================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+
+# ======================
+# Virtual Environments
+# ======================
 env/
 venv/
 ENV/
+venv3/
 
-# Django stuff
+# ======================
+# Django Stuff
+# ======================
 *.log
 *.pot
 *.pyc
 *.sqlite3
 db.sqlite3
+media/
+staticfiles/
 
-# Environment variables
+# ======================
+# Environment Variables
+# ======================
 .env
 
-# IDE files
+# ======================
+# IDE / Editor Files
+# ======================
 .vscode/
 .idea/
 *.swp
+
+# ======================
+# OS-specific Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Optional
+# ======================
+node_modules/
+.github/
