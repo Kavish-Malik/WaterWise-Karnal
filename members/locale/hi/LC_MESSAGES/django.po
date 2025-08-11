@@ -1,0 +1,1102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-11 13:22+0530\n"
+"PO-Revision-Date: 2025-08-09 00:00+0000\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Hindi <LL@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: members/templates/pages/dashboard.html:76
+#: members/templates/pages/rainwater.html:267
+msgid "Main Logo"
+msgstr "मुख्य लोगो"
+
+#: members/templates/pages/dashboard.html:77
+#: members/templates/pages/rainwater.html:268
+msgid "WaterWise Karnal"
+msgstr "वॉटरवाइज करनाल"
+
+#: members/templates/pages/dashboard.html:90
+#: members/templates/pages/rainwater.html:280
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+
+#: members/templates/pages/dashboard.html:103
+#: members/templates/pages/dashboard.html:458
+#: members/templates/pages/dashboard.html:463
+#: members/templates/pages/rainwater.html:294
+#: members/templates/partials/rwh_section_1.html:55
+msgid "Rainwater Harvesting"
+msgstr "वर्षा जल संचयन"
+
+#: members/templates/pages/dashboard.html:114
+msgid "Show Notifications"
+msgstr "सूचनाएँ दिखाएँ"
+
+#: members/templates/pages/dashboard.html:122
+msgid "WaterWise Subsidies & Weather Alerts"
+msgstr "वॉटरवाइज सब्सिडी और मौसम चेतावनी"
+
+#: members/templates/pages/dashboard.html:128
+msgid "Micro-Irrigation Subsidies (Drip & Sprinkler)"
+msgstr "सूक्ष्म सिंचाई सब्सिडी (ड्रिप और स्प्रिंकलर)"
+
+#: members/templates/pages/dashboard.html:129
+#, python-format
+msgid ""
+"UP govt provides <strong>65–90%% subsidy</strong> on micro-irrigation "
+"systems for farmers. Apply now to save water & money."
+msgstr ""
+"उत्तर प्रदेश सरकार किसानों को सूक्ष्म सिंचाई प्रणालियों पर <strong>65–90%% सब्सिडी</"
+"strong> देती है। पानी और पैसे बचाने के लिए अभी आवेदन करें।"
+
+#: members/templates/pages/dashboard.html:131
+msgid "Apply Now"
+msgstr "अभी आवेदन करें"
+
+#: members/templates/pages/dashboard.html:137
+msgid "Solar-Powered Pump Subsidy (PM-KUSUM)"
+msgstr "सौर ऊर्जा चालित पंप सब्सिडी (पीएम-कुसुम)"
+
+#: members/templates/pages/dashboard.html:138
+msgid ""
+"Central Govt’s PM-KUSUM scheme offers massive subsidies for farmers to "
+"install solar-powered irrigation pumps."
+msgstr ""
+"केंद्रीय सरकार की पीएम-कुसुम योजना किसानों को सौर ऊर्जा चालित सिंचाई पंप लगाने के लिए "
+"भारी सब्सिडी प्रदान करती है।"
+
+#: members/templates/pages/dashboard.html:140
+msgid "Know More"
+msgstr "और जानें"
+
+#: members/templates/pages/dashboard.html:146
+msgid "IMD Rain Alert"
+msgstr "आईएमडी वर्षा चेतावनी"
+
+#: members/templates/pages/dashboard.html:147
+msgid "Fetching latest rainfall advisory..."
+msgstr "नवीनतम वर्षा परामर्श प्राप्त किया जा रहा है..."
+
+#: members/templates/pages/dashboard.html:149
+msgid "IMD Website"
+msgstr "आईएमडी वेबसाइट"
+
+#: members/templates/pages/dashboard.html:204
+#: members/templates/pages/dashboard.html:245
+#: members/templates/pages/dashboard.html:293
+msgid "District"
+msgstr "जिला"
+
+#: members/templates/pages/dashboard.html:206
+#: members/templates/pages/dashboard.html:247
+msgid "Karnal"
+msgstr "करनाल"
+
+#: members/templates/pages/dashboard.html:212
+#: members/templates/pages/dashboard.html:251
+msgid "Type"
+msgstr "प्रकार"
+
+#: members/templates/pages/dashboard.html:214
+msgid "Select Type"
+msgstr "प्रकार चुनें"
+
+#: members/templates/pages/dashboard.html:215
+#: members/templates/pages/dashboard.html:254
+msgid "Village"
+msgstr "गाँव"
+
+#: members/templates/pages/dashboard.html:216
+#: members/templates/pages/dashboard.html:255
+msgid "Town"
+msgstr "कस्बा"
+
+#: members/templates/pages/dashboard.html:222
+#: members/templates/pages/dashboard.html:259
+msgid "Place"
+msgstr "स्थान"
+
+#: members/templates/pages/dashboard.html:224
+#: members/templates/pages/dashboard.html:261
+msgid "Select Place"
+msgstr "स्थान चुनें"
+
+#: members/templates/pages/dashboard.html:230
+msgid "Save & Continue"
+msgstr "सहेजें और जारी रखें"
+
+#: members/templates/pages/dashboard.html:239
+msgid "Select Location"
+msgstr "स्थान चुनें"
+
+#: members/templates/pages/dashboard.html:253
+msgid "Select"
+msgstr "चुनें"
+
+#: members/templates/pages/dashboard.html:264
+#: members/templates/socialaccount/login.html:4
+msgid "Continue"
+msgstr "जारी रखें"
+
+#: members/templates/pages/dashboard.html:278
+msgid "Groundwater Status"
+msgstr "भूजल की स्थिति"
+
+#: members/templates/pages/dashboard.html:283
+msgid "Village/Town"
+msgstr "गाँव/कस्बा"
+
+#: members/templates/pages/dashboard.html:303
+msgid "Water Level (m bgl)"
+msgstr "जल स्तर (मीटर बीजीएल)"
+
+#: members/templates/pages/dashboard.html:317
+msgid "Status"
+msgstr "स्थिति"
+
+#: members/templates/pages/dashboard.html:321
+#: members/templates/pages/dashboard.html:350
+msgid "Safe"
+msgstr "सुरक्षित"
+
+#: members/templates/pages/dashboard.html:335
+msgid "Water Quality"
+msgstr "जल की गुणवत्ता"
+
+#: members/templates/pages/dashboard.html:340
+msgid "Water Quality Status"
+msgstr "जल गुणवत्ता की स्थिति"
+
+#: members/templates/pages/dashboard.html:352
+msgid "Not Safe"
+msgstr "असुरक्षित"
+
+#: members/templates/pages/dashboard.html:366
+msgid "Fluoride"
+msgstr "फ्लोराइड"
+
+#: members/templates/pages/dashboard.html:370
+#: members/templates/pages/dashboard.html:387
+#: members/templates/pages/dashboard.html:404
+#: members/templates/pages/dashboard.html:421
+#: members/templates/pages/dashboard.html:438
+msgid "--"
+msgstr "--"
+
+#: members/templates/pages/dashboard.html:383
+msgid "Nitrate"
+msgstr "नाइट्रेट"
+
+#: members/templates/pages/dashboard.html:400
+msgid "Arsenic"
+msgstr "आर्सेनिक"
+
+#: members/templates/pages/dashboard.html:417
+msgid "Iron"
+msgstr "लोहा"
+
+#: members/templates/pages/dashboard.html:434
+msgid "EC (Salinity)"
+msgstr "ईसी (लवणता)"
+
+#: members/templates/pages/dashboard.html:465
+#, fuzzy
+#| msgid ""
+#| "Rainwater harvesting is a simple and effective method of collecting and "
+#| "storing rainwater \n"
+#| "for future use. It helps conserve water, reduces dependency on "
+#| "groundwater, and promotes \n"
+#| "sustainable living. Learn how this practice can benefit your community "
+#| "and the environment."
+msgid ""
+"\n"
+"Rainwater harvesting is a simple and effective method of collecting and "
+"storing rainwater for future use. It helps conserve water, reduces "
+"dependency on groundwater, and promotes sustainable living. Learn how this "
+"practice can benefit your community and the environment.\n"
+msgstr ""
+"वर्षा जल संचयन वर्षा के पानी को एकत्रित और संग्रहीत करने का एक सरल और प्रभावी तरीका "
+"है। यह पानी की बचत करता है, भूजल पर निर्भरता कम करता है और सतत जीवनशैली को बढ़ावा "
+"देता है। जानें कि यह तरीका आपके समुदाय और पर्यावरण के लिए कैसे लाभकारी हो सकता है।"
+
+#: members/templates/pages/dashboard.html:472
+msgid "Read More →"
+msgstr "और पढ़ें →"
+
+#: members/templates/pages/rainwater.html:9
+msgid "Rainwater Harvesting: Smart Farming Wisdom 💧"
+msgstr "वर्षा जल संचयन: स्मार्ट खेती की समझ 💧"
+
+#: members/templates/pages/rainwater.html:250
+msgid "Toggle Sidebar"
+msgstr ""
+
+#: members/templates/pages/rainwater.html:308
+msgid "Rainwater Harvesting: Smart Farming Wisdom"
+msgstr "वर्षा जल संचयन: स्मार्ट खेती की समझ"
+
+#: members/templates/pages/rainwater.html:325
+msgid "Calculate Your Savings with Rainwater Harvesting"
+msgstr "वर्षा जल संचयन के साथ अपनी बचत की गणना करें"
+
+#: members/templates/partials/rwh_calculator_embed.html:5
+msgid "Calculate Your Savings by Using Water Harvesting"
+msgstr "वर्षा जल संचयन से अपनी बचत की गणना करें"
+
+#: members/templates/partials/rwh_calculator_embed.html:10
+msgid "Rooftop Area (sq.m)"
+msgstr "छत का क्षेत्रफल (वर्ग मीटर)"
+
+#: members/templates/partials/rwh_calculator_embed.html:14
+msgid "Annual Rainfall (mm)"
+msgstr "वार्षिक वर्षा (मिमी)"
+
+#: members/templates/partials/rwh_calculator_embed.html:18
+msgid "Surface Type"
+msgstr "सतह का प्रकार"
+
+#: members/templates/partials/rwh_calculator_embed.html:20
+msgid "Concrete"
+msgstr "कंक्रीट"
+
+#: members/templates/partials/rwh_calculator_embed.html:21
+msgid "Tile"
+msgstr "टाइल"
+
+#: members/templates/partials/rwh_calculator_embed.html:22
+msgid "Soil"
+msgstr "मिट्टी"
+
+#: members/templates/partials/rwh_calculator_embed.html:26
+msgid "Water Rate (₹/KL)"
+msgstr "पानी की दर (₹/किलोलीटर)"
+
+#: members/templates/partials/rwh_calculator_embed.html:30
+msgid "Calculate"
+msgstr "गणना करें"
+
+#: members/templates/partials/rwh_calculator_embed.html:35
+msgid "Estimated Harvested Water:"
+msgstr "अनुमानित संचयित जल:"
+
+#: members/templates/partials/rwh_calculator_embed.html:35
+msgid "KL"
+msgstr "किलोलीटर"
+
+#: members/templates/partials/rwh_calculator_embed.html:36
+msgid "Estimated Cost Savings:"
+msgstr "अनुमानित लागत बचत:"
+
+#: members/templates/partials/rwh_section_1.html:50
+msgid "What Rainwater Harvesting Is"
+msgstr "वर्षा जल संचयन क्या है"
+
+#: members/templates/partials/rwh_section_1.html:62
+msgid ""
+"Rainwater harvesting (RWH), in farmer’s lingo, means catching rain when it "
+"falls on your fields, roofs, or sheds, and storing it for later use—either "
+"directly in ponds, farm bunds, underground tanks, or into the ground for "
+"recharging borewells. It’s like filling up your water tank during the rains "
+"so you’ve got a backup when skies turn dry. Simple, yet it works wonders for "
+"irrigation, livestock, and even domestic chores on the farm."
+msgstr ""
+"किसानों की भाषा में वर्षा जल संचयन (RWH) का मतलब है बारिश को जब यह आपके खेतों, छतों या "
+"शेड्स पर गिरती है, उसे पकड़ना और बाद में उपयोग के लिए स्टोर करना—या तो सीधे तालाबों, खेत "
+"के बांधों, भूमिगत टैंकों में या भूमिगत जल स्तर को पुनः भरण के लिए। यह ऐसा है जैसे आप बारिश के "
+"मौसम में अपने जल टैंक को भर लेते हैं ताकि सूखे मौसम में पानी की आपूर्ति बनी रहे। सरल है, लेकिन "
+"सिंचाई, पशुपालन और घरेलू कामों में कमाल करता है।"
+
+#: members/templates/partials/rwh_section_1.html:64
+msgid "Types of RWH:"
+msgstr "वर्षा जल संचयन के प्रकार:"
+
+#: members/templates/partials/rwh_section_1.html:66
+msgid ""
+"Roof water harvesting: Simple gutters and filters divert water from shed "
+"roofs into plastic/poly tanks or recharge pits. Farmers often call them "
+"“tapri tanks” or “underground sump” in local terms."
+msgstr ""
+"छत का जल संचयन: सरल नालियां और फिल्टर्स शेड की छत से पानी को प्लास्टिक/पॉली टैंकों या "
+"पुनर्भरण गड्ढों में मोड़ते हैं। किसान इन्हें स्थानीय रूप से “टपरी टैंक” या “भूमिगत समप” कहते हैं।"
+
+#: members/templates/partials/rwh_section_1.html:67
+msgid ""
+"Field bunding & contour trenches: Using tractors or cattle-led ploughing, "
+"bunds are built along slopes to hold rain, giving it time to soak in rather "
+"than run off."
+msgstr ""
+"खेत के बांध और कंटूर खाइयां: ट्रैक्टर या पशुओं द्वारा जुताई करते हुए, ढलानों के साथ बांध बनाकर "
+"बारिश को रोकते हैं ताकि पानी जमीं में समा सके न कि बह जाए।"
+
+#: members/templates/partials/rwh_section_1.html:68
+msgid ""
+"Farm ponds/johads: Dug-out pits (traditional johads) catch and store surplus "
+"rainwater—used later to irrigate fields or water livestock. In Haryana and "
+"Rajasthan, johads act like on-farm reservoirs."
+msgstr ""
+"खेत के तालाब/जोहड़: खोदे गए गड्ढे (पारंपरिक जोहड़) अतिरिक्त वर्षा जल पकड़ते हैं—जो बाद में "
+"खेतों की सिंचाई या पशुओं को पानी देने के लिए उपयोग होता है। हरियाणा और राजस्थान में जोहड़ "
+"खेत के जलाशयों की तरह काम करते हैं।"
+
+#: members/templates/partials/rwh_section_1.html:69
+msgid ""
+"Recharge shafts and pits: These are drilled near the bund or under sheds to "
+"help rain soak down, strengthening groundwater reserves."
+msgstr ""
+"पुनर्भरण शाफ्ट और गड्ढे: ये बांध के पास या शेड के नीचे खोदे जाते हैं ताकि बारिश जमीन में समा "
+"सके और भूजल स्तर मजबूत हो।"
+
+#: members/templates/partials/rwh_section_1.html:72
+msgid "On-Farm Benefits:"
+msgstr "खेत में लाभ:"
+
+#: members/templates/partials/rwh_section_1.html:74
+msgid ""
+"Boosts soil moisture: Trench and bund systems reduce runoff, so moisture "
+"lingers longer in your field."
+msgstr ""
+"मिट्टी की नमी बढ़ाता है: खाइयां और बांध बहाव कम करते हैं, जिससे नमी आपके खेत में अधिक समय "
+"तक बनी रहती है।"
+
+#: members/templates/partials/rwh_section_1.html:75
+msgid ""
+"Improves crop yields: Water stays longer in the root zone—less stress on "
+"late-sown crops."
+msgstr ""
+"फसल की पैदावार बढ़ाता है: पानी जड़ क्षेत्र में अधिक समय रहता है—देर से बोई फसलों पर कम "
+"तनाव।"
+
+#: members/templates/partials/rwh_section_1.html:76
+msgid ""
+"Lowers pumping costs: Groundwater stays recharged, reducing the number of "
+"hours you run tubewells."
+msgstr ""
+"पंपिंग लागत कम करता है: भूजल पुनः भरा रहता है, जिससे ट्यूबवेल चलाने के घंटे कम हो जाते हैं।"
+
+#: members/templates/partials/rwh_section_1.html:77
+msgid ""
+"Reduces soil erosion: Bunds hold back topsoil; trenches slow water, saving "
+"your precious earth."
+msgstr ""
+"मिट्टी के कटाव को कम करता है: बांध ऊपरी मिट्टी को रोकते हैं; खाइयां पानी की गति कम "
+"करती हैं, जिससे आपकी मिट्टी बचती है।"
+
+#: members/templates/partials/rwh_section_1.html:78
+msgid ""
+"Farm resilience in dry spells: Even a short dry spell won’t destroy your "
+"crop if the soil still has some moisture stored."
+msgstr ""
+"सूखे मौसम में खेत की मजबूती: यदि मिट्टी में कुछ नमी बची है तो छोटा सूखा भी आपकी फसल को "
+"नुकसान नहीं पहुंचा पाएगा।"
+
+#: members/templates/partials/rwh_section_1.html:81
+msgid ""
+"For farmers across Haryana and Punjab, rainwater harvesting isn’t some "
+"foreign tech—it’s farm smarts. It’s just about working with the land you’ve "
+"got, catching what nature gives, and saving every drop."
+msgstr ""
+"हरियाणा और पंजाब के किसानों के लिए वर्षा जल संचयन कोई विदेशी तकनीक नहीं है—यह खेती की "
+"समझ है। यह बस उस जमीन के साथ काम करने का तरीका है जो आपके पास है, जो प्रकृति देती है "
+"उसे पकड़ना और हर बूंद बचाना।"
+
+#: members/templates/partials/rwh_section_2.html:54
+#, fuzzy
+#| msgid "Why Rainwater Harvesting Is Important"
+msgid "Why Rainwater Harvesting is Important"
+msgstr "वर्षा जल संचयन क्यों महत्वपूर्ण है"
+
+#: members/templates/partials/rwh_section_2.html:62
+msgid "Why Rainwater Harvesting Is Important"
+msgstr "वर्षा जल संचयन क्यों महत्वपूर्ण है"
+
+#: members/templates/partials/rwh_section_2.html:63
+msgid ""
+"If you ask any experienced farmer in Haryana or Punjab, they’ll tell you "
+"directly:"
+msgstr "यदि आप हरियाणा या पंजाब के किसी अनुभवी किसान से पूछें, तो वे सीधे कहेंगे:"
+
+#: members/templates/partials/rwh_section_2.html:64
+msgid "Without water, the farm dies."
+msgstr "पानी के बिना, खेत मर जाता है।"
+
+#: members/templates/partials/rwh_section_2.html:64
+msgid ""
+"That’s why rainwater harvesting (RWH) is not just a good idea — it’s a "
+"necessity."
+msgstr "इसीलिए वर्षा जल संचयन (RWH) सिर्फ एक अच्छा विचार नहीं है — यह एक आवश्यकता है।"
+
+#: members/templates/partials/rwh_section_2.html:65
+msgid "Especially in places like Karnal, where farmers in the video say:"
+msgstr "विशेष रूप से करनाल जैसे स्थानों में, जहां वीडियो में किसान कहते हैं:"
+
+#: members/templates/partials/rwh_section_2.html:66
+msgid "Before, water was available year-round; now even three months is hard."
+msgstr "पहले, पानी साल भर उपलब्ध था; अब तीन महीने भी मुश्किल हैं।"
+
+#: members/templates/partials/rwh_section_2.html:70
+msgid "Groundwater Tube-Wells Drying Up"
+msgstr "भूजल ट्यूब-वेल सूख रहे हैं"
+
+#: members/templates/partials/rwh_section_2.html:72
+msgid "In the first three minutes of the Karnal farmer’s video, he mentions:"
+msgstr "करनाल किसान के वीडियो के पहले तीन मिनट में, वह बताते हैं:"
+
+#: members/templates/partials/rwh_section_2.html:72
+msgid "Even a 500 ft borewell failed."
+msgstr "यहां तक कि 500 फीट का बोरवेल भी फेल हो गया।"
+
+#: members/templates/partials/rwh_section_2.html:73
+msgid ""
+"Farmers in Haryana rely heavily on borewells. But borewell water isn’t "
+"unlimited — if the underground water table isn’t recharged, it finishes."
+msgstr ""
+"हरियाणा के किसान बोरवेल पर भारी निर्भर करते हैं। लेकिन बोरवेल का पानी अनंत नहीं है — "
+"यदि भूमिगत जल स्तर पुनः नहीं भरा गया, तो पानी खत्म हो जाता है।"
+
+#: members/templates/partials/rwh_section_2.html:74
+msgid ""
+"Rainwater harvesting helps recharge the aquifer. When rainwater seeps down "
+"through pits and trenches, it fills up those empty spaces underground that "
+"borewells tap into."
+msgstr ""
+"वर्षा जल संचयन जलभृत को पुनः भरने में मदद करता है। जब वर्षा जल गड्ढों और खाइयों से नीचे "
+"रिसता है, तो यह उन खाली जगहों को भर देता है जिनसे बोरवेल पानी निकालते हैं।"
+
+#: members/templates/partials/rwh_section_2.html:75
+msgid ""
+"Without recharge, you’ll find yourself calling JCB operators again and again:"
+msgstr "बिना पुनर्भरण के, आपको बार-बार जेसीबी ऑपरेटर बुलाना पड़ेगा:"
+
+#: members/templates/partials/rwh_section_2.html:75
+msgid ""
+"Dig me another borewell — costing thousands, and there’s still no guarantee "
+"of water."
+msgstr ""
+"मुझे एक और बोरवेल खोद दो — हजारों की लागत पर, और फिर भी पानी की कोई गारंटी नहीं।"
+
+#: members/templates/partials/rwh_section_2.html:78
+msgid "Crops Suffer in Dry Spells"
+msgstr "सूखे मौसम में फसलें प्रभावित होती हैं"
+
+#: members/templates/partials/rwh_section_2.html:80
+msgid "A farmer says in the video:"
+msgstr "वीडियो में एक किसान कहते हैं:"
+
+#: members/templates/partials/rwh_section_2.html:80
+msgid "Two days without rain and the crop is ruined."
+msgstr "दो दिन बिना बारिश के और फसल खराब हो जाती है।"
+
+#: members/templates/partials/rwh_section_2.html:81
+msgid ""
+"Especially for paddy, wheat, or sugarcane, water at the right stage is "
+"crucial."
+msgstr "विशेषकर धान, गेहूं, या गन्ने के लिए सही समय पर पानी बहुत जरूरी है।"
+
+#: members/templates/partials/rwh_section_2.html:82
+msgid ""
+"RWH means when there is a 5–10 day dry spell, there’s still water in your "
+"bunds, ponds, or recharge pit helping the soil retain moisture."
+msgstr ""
+"RWH का मतलब है कि जब 5-10 दिन का सूखा हो, तब भी आपके बांधों, तालाबों या पुनर्भरण "
+"गड्ढों में पानी होता है जो मिट्टी को नमी बनाए रखने में मदद करता है।"
+
+#: members/templates/partials/rwh_section_2.html:83
+msgid ""
+"Even in cotton or pulses, soil moisture from RWH bunds keeps roots cool and "
+"hydrated."
+msgstr ""
+"साधारण कपास या दालों में भी, RWH बांधों से मिट्टी की नमी जड़ों को ठंडा और हाइड्रेटेड रखती "
+"है।"
+
+#: members/templates/partials/rwh_section_2.html:86
+msgid "Saving Fertile Soil"
+msgstr "उपजाऊ मिट्टी की रक्षा"
+
+#: members/templates/partials/rwh_section_2.html:88
+msgid "Without rainwater control, what happens?"
+msgstr "वर्षा जल नियंत्रण के बिना क्या होता है?"
+
+#: members/templates/partials/rwh_section_2.html:88
+msgid "Runoff."
+msgstr "बहाव।"
+
+#: members/templates/partials/rwh_section_2.html:88
+msgid "Soil washes away, along with the fertilizer."
+msgstr "मिट्टी और उर्वरक दोनों बह जाते हैं।"
+
+#: members/templates/partials/rwh_section_2.html:89
+msgid ""
+"When rain hits hard and there’s no bund or trench, topsoil — the most "
+"fertile layer — goes into drains."
+msgstr ""
+"जब बारिश तेज होती है और कोई बांध या खाई नहीं होती, तो सबसे उपजाऊ मिट्टी नालियों में "
+"चली जाती है।"
+
+#: members/templates/partials/rwh_section_2.html:90
+msgid ""
+"Farmers lose both seed-bed quality and money spent on urea, DAP, and potash."
+msgstr ""
+"किसान बीज बिस्तर की गुणवत्ता और यूरिया, डीएपी, पोटाश पर खर्च किया गया पैसा दोनों खो "
+"देते हैं।"
+
+#: members/templates/partials/rwh_section_2.html:91
+msgid ""
+"RWH bunding stops that. Water is slowed down, giving it time to sink into "
+"the field while holding the soil in place."
+msgstr ""
+"RWH बांध इसे रोकते हैं। पानी की गति धीमी हो जाती है, जिससे यह खेत में समा जाता है और "
+"मिट्टी वहीं बनी रहती है।"
+
+#: members/templates/partials/rwh_section_2.html:94
+msgid "Cost Cutting — Less Diesel, Less Electricity"
+msgstr "लागत कम करना — कम डीजल, कम बिजली"
+
+#: members/templates/partials/rwh_section_2.html:96
+msgid ""
+"Less borewell use: If your groundwater is topped up naturally, you won’t "
+"have to run diesel pumps or electric tubewells as much."
+msgstr ""
+"कम बोरवेल उपयोग: यदि आपका भूजल प्राकृतिक रूप से भर जाता है, तो आपको डीजल पंप या "
+"इलेक्ट्रिक ट्यूबवेल कम चलाने पड़ेंगे।"
+
+#: members/templates/partials/rwh_section_2.html:97
+msgid "One Karnal farmer says:"
+msgstr "एक करनाल किसान कहते हैं:"
+
+#: members/templates/partials/rwh_section_2.html:97
+msgid "Electric bill cut in half after making bunds and pits."
+msgstr "बांध और गड्ढे बनाने के बाद बिजली का बिल आधा हो गया।"
+
+#: members/templates/partials/rwh_section_2.html:98
+msgid ""
+"Even livestock water needs — cows, buffaloes, goats — can be handled by "
+"stored rainwater in farm ponds."
+msgstr ""
+"पशुधन की पानी की जरूरतें — गाय, भैंस, बकरी — भी खेत के तालाबों में जमा वर्षा जल से पूरी हो "
+"सकती हैं।"
+
+#: members/templates/partials/rwh_section_2.html:101
+msgid "Future Proofing the Farm"
+msgstr "खेत का भविष्य सुरक्षित करना"
+
+#: members/templates/partials/rwh_section_2.html:103
+msgid ""
+"With climate change, monsoon patterns are shifting. Sometimes rains come "
+"early, sometimes late. Sometimes all in one shot."
+msgstr ""
+"जलवायु परिवर्तन के साथ, मानसून के पैटर्न बदल रहे हैं। कभी बारिश जल्दी आती है, कभी देर से। "
+"कभी एक बार में सारी बारिश होती है।"
+
+#: members/templates/partials/rwh_section_2.html:104
+msgid "Smart farmers think ahead:"
+msgstr "समझदार किसान आगे सोचते हैं:"
+
+#: members/templates/partials/rwh_section_2.html:104
+msgid "Who saves water today will save the farm tomorrow."
+msgstr "जो आज पानी बचाता है, कल खेत बचाएगा।"
+
+#: members/templates/partials/rwh_section_2.html:105
+msgid ""
+"That’s why rainwater harvesting is part of government advisories now. Even "
+"PMKSY (Pradhan Mantri Krishi Sinchayee Yojana) supports it."
+msgstr ""
+"इसीलिए वर्षा जल संचयन अब सरकारी सलाहों का हिस्सा है। पीएमकेएसवाई (प्रधान मंत्री कृषि "
+"सिंचाई योजना) भी इसे समर्थन देती है।"
+
+#: members/templates/partials/rwh_section_2.html:106
+msgid ""
+"Visit: <a href=\"https://pmksy.gov.in/\" target=\"_blank\">https://"
+"pmksy.gov.in/</a>"
+msgstr ""
+"देखें: <a href=\"https://pmksy.gov.in/\" target=\"_blank\">https://pmksy.gov.in/"
+"</a>"
+
+#: members/templates/partials/rwh_section_3.html:56
+#: members/templates/partials/rwh_section_3.html:64
+msgid "How to Do Rainwater Harvesting"
+msgstr "वर्षा जल संचयन कैसे करें"
+
+#: members/templates/partials/rwh_section_3.html:66
+msgid "Understand Your Land and Water Flow"
+msgstr "अपने खेत और जल प्रवाह को समझें"
+
+#: members/templates/partials/rwh_section_3.html:67
+msgid ""
+"Before a farmer can save rainwater, it’s important to understand how rain "
+"behaves on their own farm. The first rain of the season is like nature’s "
+"inspection. Go out in the field, watch where water runs off fast, where it "
+"stands, and where it disappears into the soil. These low points, slopes, and "
+"drainage paths show you exactly where bunds, trenches, ponds, or recharge "
+"pits will be most effective."
+msgstr ""
+"किसान वर्षा जल बचाने से पहले यह समझना जरूरी है कि बारिश उनके खेत पर कैसे बरसती है। मौसम "
+"की पहली बारिश प्रकृति की जाँच की तरह होती है। खेत में जाकर देखें कि पानी कहाँ तेजी से "
+"बहता है, कहाँ रुकता है, और कहाँ मिट्टी में समा जाता है। ये नीचले स्थान, ढलान और जल "
+"निकासी मार्ग आपको बताएंगे कि बांध, खड्ड, तालाब या पुनर्भरण गड्ढे कहाँ सबसे प्रभावी होंगे।"
+
+#: members/templates/partials/rwh_section_3.html:68
+msgid ""
+"Many farmers think harvesting water means building big tanks only, but real "
+"harvesting starts with knowing your land first."
+msgstr ""
+"कई किसान सोचते हैं कि जल संचयन केवल बड़े टैंकों का निर्माण है, लेकिन असली संचयन अपनी जमीन "
+"को समझने से शुरू होता है।"
+
+#: members/templates/partials/rwh_section_3.html:70
+msgid "Choosing the Right Method for Your Farm Size"
+msgstr "अपने खेत के आकार के लिए सही तरीका चुनना"
+
+#: members/templates/partials/rwh_section_3.html:72
+msgid "Small farms (up to 2 acres):"
+msgstr "छोटे खेत (2 एकड़ तक):"
+
+#: members/templates/partials/rwh_section_3.html:72
+msgid "Field bunding, small recharge pits, and roof water harvesting."
+msgstr "फील्ड बांध, छोटे पुनर्भरण गड्ढे, और छत से जल संचयन।"
+
+#: members/templates/partials/rwh_section_3.html:73
+msgid "Medium farms (2–5 acres):"
+msgstr "मध्यम खेत (2 से 5 एकड़):"
+
+#: members/templates/partials/rwh_section_3.html:73
+msgid "Contour trenches, medium-sized farm ponds, and recharge shafts."
+msgstr "ढलान खड्ड, मध्यम आकार के खेत तालाब, और पुनर्भरण शाफ्ट।"
+
+#: members/templates/partials/rwh_section_3.html:74
+msgid "Large farms (5+ acres):"
+msgstr "बड़े खेत (5 एकड़ से अधिक):"
+
+#: members/templates/partials/rwh_section_3.html:74
+msgid ""
+"Full setups with bunding, large ponds, multiple recharge pits, even check "
+"dams if there’s a village drain or nallah nearby."
+msgstr ""
+"पूरी व्यवस्था जैसे बांध बनाना, बड़े तालाब, कई पुनर्भरण गड्ढे, और यदि आसपास गांव की नाली "
+"या नाला हो तो चेक डैम।"
+
+#: members/templates/partials/rwh_section_3.html:76
+msgid "The rule is simple:"
+msgstr "नियम सरल है:"
+
+#: members/templates/partials/rwh_section_3.html:76
+msgid "Jitna zyada zameen, utni zyada jagah paani rokne ki."
+msgstr "जितनी ज्यादा ज़मीन, उतनी ज्यादा जगह पानी रोकने की।"
+
+#: members/templates/partials/rwh_section_3.html:76
+msgid "The more land you have, the more places to stop the water."
+msgstr "जितनी अधिक ज़मीन होगी, पानी रोकने के उतने ही ज्यादा स्थान होंगे।"
+
+#: members/templates/partials/rwh_section_3.html:78
+msgid "Building Bunds, Trenches, and Ponds"
+msgstr "बांध, खड्ड, और तालाब बनाना"
+
+#: members/templates/partials/rwh_section_3.html:79
+msgid ""
+"Bunds should be built across the slope using a tractor or manually, about 1–"
+"1.5 feet high. This slows water down and allows the soil to soak it in. "
+"Along with bunds, dig trenches 1.5–2 feet wide and deep, filled partially "
+"with sand or gravel."
+msgstr ""
+"ढलान के across ट्रैक्टर या हाथ से 1–1.5 फीट ऊंचे बांध बनाए जाएं। यह पानी की गति धीमी "
+"करता है और मिट्टी को सोखने देता है। बांधों के साथ 1.5–2 फीट चौड़े और गहरे खड्ड खोदें, जिनमें "
+"आंशिक रूप से रेत या बजरी भरी हो।"
+
+#: members/templates/partials/rwh_section_3.html:80
+msgid ""
+"Farm ponds are dug where water naturally collects. Even a simple pond of 20–"
+"40 feet long, 15–20 feet wide, and 5–7 feet deep can store thousands of "
+"litres of water. If lined with plastic or cow dung–clay mix, seepage loss is "
+"reduced. Farmers in Haryana say this is enough for livestock water and "
+"emergency crop irrigation for several weeks."
+msgstr ""
+"खेत तालाब ऐसे स्थान पर खोदे जाते हैं जहां पानी प्राकृतिक रूप से इकट्ठा होता है। एक साधारण "
+"तालाब जो 20–40 फीट लंबा, 15–20 फीट चौड़ा और 5–7 फीट गहरा हो, हजारों लीटर पानी "
+"संग्रहित कर सकता है। अगर प्लास्टिक या गोबर-मिट्टी मिश्रण से लाइन किया जाए तो रिसाव "
+"कम होता है। हरियाणा के किसान कहते हैं कि यह पशुओं के पानी और आपातकालीन सिंचाई के लिए "
+"कई हफ्तों तक पर्याप्त है।"
+
+#: members/templates/partials/rwh_section_3.html:81
+msgid "Saving Estimate:"
+msgstr "बचत का अनुमान:"
+
+#: members/templates/partials/rwh_section_3.html:81
+msgid ""
+"One medium-sized pond can save farmers ₹20,000–₹40,000 per year in diesel "
+"and electricity costs by reducing borewell usage. Plus, water saved from "
+"runoff keeps crops alive in dry spells, preventing total crop loss which "
+"could mean lakhs of rupees in avoided loss."
+msgstr ""
+"एक मध्यम आकार का तालाब किसानों को प्रति वर्ष ₹20,000–₹40,000 तक डीजल और बिजली की "
+"लागत बचा सकता है, क्योंकि यह ट्यूबवेल के उपयोग को कम करता है। इसके अलावा, जल संचयन से "
+"सूखे के दौरान फसलें जीवित रहती हैं, जिससे लाखों रुपये के नुकसान से बचा जा सकता है।"
+
+#: members/templates/partials/rwh_section_3.html:83
+msgid "Roof Water Harvesting for Home and Shed Water"
+msgstr "घर और आश्रय के लिए छत से जल संचयन"
+
+#: members/templates/partials/rwh_section_3.html:84
+msgid ""
+"Installing gutters along tin-roofed cattle sheds, homes, or storage rooms is "
+"cheap but powerful. Collect that rainwater through filters (sand, gravel, "
+"charcoal) into tanks or recharge pits."
+msgstr ""
+"टिन छत वाले पशुशालाओं, घरों या स्टोर रूम के साथ गटर लगाना सस्ता लेकिन प्रभावी है। उस "
+"वर्षा जल को रेत, बजरी, और चारकोल फिल्टर के माध्यम से टैंकों या पुनर्भरण गड्ढों में इकट्ठा करें।"
+
+#: members/templates/partials/rwh_section_3.html:85
+msgid ""
+"In a 500 sq. ft. roof area, farmers can collect up to 25,000–30,000 litres "
+"of water per season. That’s enough for household use, animal needs, or "
+"recharge support."
+msgstr ""
+"500 वर्ग फुट छत क्षेत्र में, किसान प्रति सीजन 25,000–30,000 लीटर पानी जमा कर सकते हैं। "
+"यह घरेलू उपयोग, पशुओं की जरूरत या पुनर्भरण सहायता के लिए पर्याप्त है।"
+
+#: members/templates/partials/rwh_section_3.html:87
+msgid "Recharge Pits for Borewell Health"
+msgstr "ट्यूबवेल की सेहत के लिए पुनर्भरण गड्ढे"
+
+#: members/templates/partials/rwh_section_3.html:88
+msgid ""
+"Every borewell eventually dries out if there’s no recharge. By digging 4–6 "
+"feet deep pits near your tubewell, filled with gravel and sand, you allow "
+"water to reach down exactly where needed. This saves the extra ₹50,000–"
+"₹1,00,000 borewell deepening cost farmers face every 3–4 years."
+msgstr ""
+"यदि पुनर्भरण नहीं होता है तो हर ट्यूबवेल अंततः सूख जाता है। अपने ट्यूबवेल के पास 4–6 फीट "
+"गहरे गड्ढे खोदकर, जिन्हें बजरी और रेत से भरा जाता है, आप पानी को सही जगह तक पहुंचने देते "
+"हैं। इससे हर 3–4 साल में ट्यूबवेल गहरा करने की ₹50,000–₹1,00,000 की अतिरिक्त लागत बचती "
+"है।"
+
+#: members/templates/partials/rwh_section_3.html:90
+msgid "Maintaining the System"
+msgstr "प्रणाली का रख-रखाव"
+
+#: members/templates/partials/rwh_section_3.html:91
+msgid ""
+"Water harvesting is not just about building once and forgetting. Farmers "
+"must clean roof filters before each monsoon, de-silt ponds once a year, and "
+"fix bund cracks quickly."
+msgstr ""
+"जल संचयन केवल एक बार बनाकर भूल जाने की बात नहीं है। किसानों को हर मानसून से पहले छत के "
+"फिल्टर साफ करने चाहिए, तालाबों की साल में एक बार सफाई करनी चाहिए, और बांध के दरारों "
+"को जल्दी ठीक करना चाहिए।"
+
+#: members/templates/partials/rwh_section_3.html:92
+msgid ""
+"If maintained well, these structures work for 10–15 years without major "
+"repair costs."
+msgstr ""
+"अगर अच्छी तरह से रख-रखाव किया जाए, तो ये संरचनाएँ बिना बड़ी मरम्मत लागत के 10–15 साल "
+"तक काम करती हैं।"
+
+#: members/templates/partials/rwh_section_3.html:94
+msgid "Why It’s Worth It: A Farmer’s Motivation"
+msgstr "क्यों यह लाभकारी है: एक किसान की प्रेरणा"
+
+#: members/templates/partials/rwh_section_3.html:95
+msgid ""
+"Every drop of rain that leaves your land is lost income. Diesel, "
+"electricity, fertilizers — everything depends on water. Farmers who set up "
+"rainwater harvesting save ₹40,000–₹1,00,000 per year minimum through:"
+msgstr ""
+"आपके खेत से निकलने वाली हर बूंद बारिश खोई हुई आमदनी है। डीजल, बिजली, उर्वरक — सब पानी "
+"पर निर्भर है। जो किसान वर्षा जल संचयन करते हैं वे प्रति वर्ष कम से कम ₹40,000–₹1,00,000 "
+"बचाते हैं, इसके द्वारा:"
+
+#: members/templates/partials/rwh_section_3.html:97
+msgid "Less borewell diesel cost"
+msgstr "कम ट्यूबवेल डीजल लागत"
+
+#: members/templates/partials/rwh_section_3.html:98
+msgid "Less fertilizer washing away"
+msgstr "कम उर्वरक का बह जाना"
+
+#: members/templates/partials/rwh_section_3.html:99
+msgid "Avoiding crop failure during dry spells"
+msgstr "सूखे के दौरान फसल नुकसान से बचाव"
+
+#: members/templates/partials/rwh_section_3.html:101
+msgid "More than the money, it’s about control."
+msgstr "पैसे से ज्यादा, यह नियंत्रण की बात है।"
+
+#: members/templates/partials/rwh_section_3.html:101
+msgid ""
+"When farmers save water on their land, they’re not waiting for the "
+"government, panchayat, or weather gods."
+msgstr ""
+"जब किसान अपने खेत पर पानी बचाते हैं, तो वे सरकार, पंचायत या मौसम देवताओं का इंतजार नहीं "
+"करते।"
+
+#: members/templates/partials/rwh_section_3.html:102
+#, fuzzy
+#| msgid ""
+#| "Jo apne kheton ka paani apne hi zameen mein rokta hai, wohi asli "
+#| "samajhdaar kisaan hai."
+msgid ""
+"“Jo apne kheton ka paani apne hi zameen mein rokta hai, wohi asli samajhdaar "
+"kisaan hai.”"
+msgstr "जो अपने खेतों का पानी अपनी ही जमीन में रोकता है, वही असली समझदार किसान है।"
+
+#: members/templates/partials/rwh_section_3.html:102
+msgid ""
+"The true wise farmer is the one who keeps his own field’s water within his "
+"own land."
+msgstr ""
+
+#: members/templates/partials/rwh_section_3.html:103
+msgid ""
+"This isn’t some modern city idea — it’s traditional farming wisdom, just "
+"adapted for today’s needs."
+msgstr ""
+"यह कोई आधुनिक शहर की सोच नहीं है — यह पारंपरिक खेती की समझ है, जो आज की जरूरतों के "
+"अनुसार ढाली गई है।"
+
+#: members/templates/partials/rwh_section_4.html:56
+#, fuzzy
+#| msgid "Smart Farming Practices Along with Rainwater Harvesting"
+msgid "Smart Farming Practices with RWH"
+msgstr "वर्षा जल संचयन के साथ स्मार्ट खेती के तरीके"
+
+#: members/templates/partials/rwh_section_4.html:64
+#, fuzzy
+#| msgid "Smart Farming Practices Along with Rainwater Harvesting"
+msgid "🌾 Smart Farming Practices Along with Rainwater Harvesting"
+msgstr "वर्षा जल संचयन के साथ स्मार्ट खेती के तरीके"
+
+#: members/templates/partials/rwh_section_4.html:65
+msgid ""
+"Once a farmer has set up rainwater harvesting on their land, the next smart "
+"step is using that saved water wisely. Water alone does not guarantee a "
+"successful crop. It is about how, when, and where the water is used, along "
+"with other modern farming practices. In today’s time, with rising costs of "
+"fertilizers, diesel, and labour, smart farming means getting maximum output "
+"with minimum wastage."
+msgstr ""
+"जब कोई किसान अपने खेत में वर्षा जल संचयन स्थापित कर लेता है, तो अगला समझदारी भरा कदम "
+"होता है उस जमा पानी का समझदारी से उपयोग करना। केवल पानी होना फसल की सफलता की "
+"गारंटी नहीं है। यह इस बात पर निर्भर करता है कि पानी कब, कहाँ और कैसे उपयोग किया जाता "
+"है, साथ ही अन्य आधुनिक खेती के तरीकों पर भी। आज के समय में, उर्वरक, डीजल और मजदूरी की "
+"बढ़ती लागत के साथ, स्मार्ट खेती का मतलब है कम से कम बर्बादी के साथ अधिकतम उपज पाना।"
+
+#: members/templates/partials/rwh_section_4.html:67
+msgid "Combining Rainwater Harvesting with Drip and Sprinkler Systems"
+msgstr "वर्षा जल संचयन को ड्रिप और स्प्रिंकलर सिस्टम के साथ जोड़ना"
+
+#: members/templates/partials/rwh_section_4.html:68
+msgid ""
+"The first and most effective smart farming step is using drip irrigation and "
+"sprinkler systems. Drip systems deliver water directly to the root zone of "
+"plants. Even if you have stored water from rainwater harvesting in a farm "
+"pond or recharge pit, using it through drip ensures that not even one drop "
+"is wasted."
+msgstr ""
+"स्मार्ट खेती का पहला और सबसे प्रभावी कदम है ड्रिप सिंचाई और स्प्रिंकलर सिस्टम का उपयोग। "
+"ड्रिप सिस्टम पौधों की जड़ों तक सीधे पानी पहुंचाते हैं। भले ही आपके पास खेत तालाब या पुनर्भरण "
+"गड्ढे में जमा वर्षा जल हो, ड्रिप के माध्यम से इसका उपयोग यह सुनिश्चित करता है कि एक बूंद "
+"भी व्यर्थ न हो।"
+
+#: members/templates/partials/rwh_section_4.html:69
+#, fuzzy, python-format
+#| msgid ""
+#| "For example, a farmer with one acre of vegetables or fruit trees using "
+#| "drip irrigation saves up to 40–50% water compared to flood irrigation. "
+#| "This is especially important when water is limited. Sprinklers are also "
+#| "useful for crops like wheat or pulses where drip might not fit."
+msgid ""
+"For example, a farmer with one acre of vegetables or fruit trees using drip "
+"irrigation saves up to 40–50%% water compared to flood irrigation. This is "
+"especially important when water is limited. Sprinklers are also useful for "
+"crops like wheat or pulses where drip might not fit."
+msgstr ""
+"उदाहरण के लिए, एक किसान जो एक एकड़ में सब्जियां या फलदार पेड़ उगाता है और ड्रिप सिंचाई "
+"का उपयोग करता है, वह बाढ़ सिंचाई की तुलना में 40–50% तक पानी बचा सकता है। यह खासकर "
+"तब महत्वपूर्ण है जब पानी सीमित हो। स्प्रिंकलर उन फसलों के लिए भी उपयोगी हैं जैसे गेहूं या "
+"दालें जहाँ ड्रिप फिट न हो।"
+
+#: members/templates/partials/rwh_section_4.html:70
+msgid ""
+"Many farmers combine these systems with their ponds. Water is pumped from "
+"the pond into the drip lines, cutting down dependency on borewell pumping."
+msgstr ""
+"कई किसान इन सिस्टम को अपने तालाबों के साथ जोड़ते हैं। पानी तालाब से ड्रिप लाइनों में पंप "
+"किया जाता है, जिससे ट्यूबवेल पंपिंग पर निर्भरता कम हो जाती है।"
+
+#: members/templates/partials/rwh_section_4.html:72
+msgid "Timing Your Irrigation with Weather Awareness"
+msgstr "मौसम की जानकारी के साथ सिंचाई का समय निर्धारित करना"
+
+#: members/templates/partials/rwh_section_4.html:73
+msgid ""
+"Another smart practice is not irrigating blindly. Farmers should keep track "
+"of weather forecasts. Many free mobile apps now show upcoming rain "
+"predictions. By checking before starting irrigation, farmers can avoid "
+"overwatering. This saves water, diesel, and prevents fertilizer wash-off."
+msgstr ""
+"एक और स्मार्ट तरीका है बिना सोचे-समझे सिंचाई न करना। किसानों को मौसम पूर्वानुमान पर "
+"नजर रखनी चाहिए। कई मुफ्त मोबाइल ऐप अब आने वाली बारिश की जानकारी देते हैं। सिंचाई शुरू "
+"करने से पहले जांच कर किसान पानी की अधिकता से बच सकते हैं। इससे पानी, डीजल बचता है और "
+"उर्वरक का बहना भी रुकता है।"
+
+#: members/templates/partials/rwh_section_4.html:74
+msgid ""
+"For example, if rain is expected in 2–3 days, farmers can skip one "
+"irrigation round and let the rain do the job naturally."
+msgstr ""
+"उदाहरण के लिए, अगर 2–3 दिनों में बारिश होने की संभावना हो, तो किसान एक बार सिंचाई "
+"छोड़ सकते हैं और बारिश को प्राकृतिक रूप से काम करने दें।"
+
+#: members/templates/partials/rwh_section_4.html:76
+msgid "Using Mulching to Preserve Moisture"
+msgstr "मिट्टी की नमी बनाए रखने के लिए मल्चिंग का उपयोग"
+
+#: members/templates/partials/rwh_section_4.html:77
+#, fuzzy, python-format
+#| msgid ""
+#| "Once rainwater has been absorbed into the soil, the next step is "
+#| "preventing that moisture from evaporating quickly. Smart farmers use "
+#| "mulching — covering soil with straw, dry leaves, or plastic sheets. This "
+#| "keeps the soil cool, prevents weed growth, and saves up to 25–30% more "
+#| "water over the season."
+msgid ""
+"Once rainwater has been absorbed into the soil, the next step is preventing "
+"that moisture from evaporating quickly. Smart farmers use mulching — "
+"covering soil with straw, dry leaves, or plastic sheets. This keeps the soil "
+"cool, prevents weed growth, and saves up to 25–30%% more water over the "
+"season."
+msgstr ""
+"जब बारिश का पानी मिट्टी में समा जाता है, अगला कदम होता है उस नमी को जल्दी वाष्पित "
+"होने से बचाना। स्मार्ट किसान मल्चिंग का उपयोग करते हैं — सूखे पत्ते, तिनके या प्लास्टिक की "
+"चादरों से मिट्टी को ढकते हैं। इससे मिट्टी ठंडी रहती है, खरपतवार कम बढ़ते हैं और सीजन में 25–"
+"30% अधिक पानी बचता है।"
+
+#: members/templates/partials/rwh_section_4.html:78
+msgid ""
+"Even small farmers growing vegetables like tomatoes, cucumbers, or chillies "
+"can use mulch for better results using their harvested rainwater."
+msgstr ""
+"छोटे किसान भी टमाटर, खीरा, या मिर्च जैसी सब्जियां उगाते हुए बेहतर परिणामों के लिए अपने "
+"जमा वर्षा जल के साथ मल्चिंग कर सकते हैं।"
+
+#: members/templates/partials/rwh_section_4.html:80
+msgid "Crop Planning According to Water Availability"
+msgstr "पानी की उपलब्धता के अनुसार फसल योजना बनाना"
+
+#: members/templates/partials/rwh_section_4.html:81
+msgid ""
+"Farmers practicing smart farming don’t just grow what everyone else is "
+"growing. They check how much water is available from rainwater harvesting "
+"and then choose crops accordingly."
+msgstr ""
+"स्मार्ट खेती करने वाले किसान केवल वही फसल नहीं उगाते जो सब उगा रहे हैं। वे जांचते हैं कि "
+"वर्षा जल संचयन से कितना पानी उपलब्ध है और उसके अनुसार फसल चुनते हैं।"
+
+#: members/templates/partials/rwh_section_4.html:83
+msgid ""
+"Farmers with small ponds may focus on vegetables or pulses that need less "
+"water."
+msgstr "छोटे तालाब वाले किसान कम पानी वाली सब्जियां या दालों पर ध्यान दे सकते हैं।"
+
+#: members/templates/partials/rwh_section_4.html:84
+msgid ""
+"Those with bigger water storage can plant paddy or sugarcane in controlled "
+"plots."
+msgstr "जिनके पास अधिक जल संचयन है वे नियंत्रित खेतों में धान या गन्ना उगा सकते हैं।"
+
+#: members/templates/partials/rwh_section_4.html:85
+msgid ""
+"Some farmers rotate crops — growing water-heavy crops only once every two or "
+"three seasons while focusing on low-water crops in between."
+msgstr ""
+"कुछ किसान फसलों का चक्रीकरण करते हैं — जल-गहन फसलें हर दो या तीन सीजन में एक बार उगाते "
+"हैं और बीच में कम पानी वाली फसलों पर ध्यान देते हैं।"
+
+#: members/templates/partials/rwh_section_4.html:87
+msgid "This strategy protects both water resources and soil health."
+msgstr "यह रणनीति जल संसाधनों और मिट्टी दोनों की रक्षा करती है।"
+
+#: members/templates/partials/rwh_section_4.html:89
+msgid "Government Schemes and Support"
+msgstr "सरकारी योजनाएं और सहायता"
+
+#: members/templates/partials/rwh_section_4.html:90
+#, fuzzy, python-format
+#| msgid ""
+#| "Smart farmers also take advantage of government programs like PMKSY "
+#| "(Pradhan Mantri Krishi Sinchayee Yojana) and other state-level subsidies "
+#| "for drip systems, pond construction, and rainwater harvesting structures. "
+#| "These schemes cover 40–60% of the setup cost."
+msgid ""
+"Smart farmers also take advantage of government programs like PMKSY (Pradhan "
+"Mantri Krishi Sinchayee Yojana) and other state-level subsidies for drip "
+"systems, pond construction, and rainwater harvesting structures. These "
+"schemes cover 40–60%% of the setup cost."
+msgstr ""
+"स्मार्ट किसान पीएमकेएसवाई (प्रधान मंत्री कृषि सिंचाई योजना) जैसी सरकारी योजनाओं और अन्य "
+"राज्य स्तरीय सब्सिडी का भी लाभ उठाते हैं, जो ड्रिप सिस्टम, तालाब निर्माण और वर्षा जल "
+"संचयन संरचनाओं के लिए होती हैं। ये योजनाएं स्थापना लागत का 40–60% तक कवर करती हैं।"
+
+#: members/templates/partials/rwh_section_4.html:91
+msgid ""
+"It’s important to visit your local agriculture office or Krishi Vigyan "
+"Kendra (KVK) and ask about ongoing schemes rather than missing out."
+msgstr ""
+"अपने स्थानीय कृषि कार्यालय या कृषि विज्ञान केंद्र (केवीके) जाना और चल रही योजनाओं के बारे "
+"में पूछना महत्वपूर्ण है, ताकि आप उनसे वंचित न रहें।"
+
+#: members/templates/partials/rwh_section_5.html:5
+msgid "🌟 The Final Thought"
+msgstr "🌟 अंतिम विचार"
+
+#: members/templates/partials/rwh_section_5.html:6
+msgid ""
+"Farming today is not about only hard work; it’s about smart work. Combining "
+"rainwater harvesting with modern irrigation, crop planning, mulching, and "
+"technology makes farming sustainable."
+msgstr ""
+"आज की खेती केवल मेहनत नहीं, बल्कि समझदारी की भी मांग करती है। वर्षा जल संचयन को आधुनिक "
+"सिंचाई, फसल योजना, मल्चिंग और तकनीक के साथ मिलाकर खेती को टिकाऊ बनाया जा सकता है।"
+
+#: members/templates/partials/rwh_section_5.html:7
+msgid "As many successful farmers say:"
+msgstr "जैसे कई सफल किसान कहते हैं:"
+
+#: members/templates/partials/rwh_section_5.html:9
+msgid "“Pahele paani sambhal, fir kheti sambhal.”"
+msgstr "“पहले पानी संभाल, फिर खेती संभाल।”"
+
+#: members/templates/partials/rwh_section_5.html:10
+msgid "First save your water, then focus on farming."
+msgstr "पहले अपना पानी बचाओ, फिर खेती पर ध्यान दो।"
+
+#: members/templates/partials/rwh_section_5.html:12
+msgid ""
+"When rainwater harvesting is combined with smart practices, farmers reduce "
+"costs, increase yields, and make sure their fields stay productive not just "
+"for one season, but for generations."
+msgstr ""
+"जब वर्षा जल संचयन को स्मार्ट खेती के तरीकों के साथ जोड़ा जाता है, तो किसान लागत कम करते "
+"हैं, उपज बढ़ाते हैं, और सुनिश्चित करते हैं कि उनके खेत न केवल एक मौसम के लिए बल्कि पीढ़ियों तक "
+"उपजाऊ बने रहें।"
+
+#: members/templates/partials/rwh_section_5.html:19
+msgid "Final Motivation Rainwater Harvesting"
+msgstr "अंतिम प्रेरणा: वर्षा जल संचयन"
+
+#: members/templates/socialaccount/login.html:4
+msgid "Sign In Via Google"
+msgstr "गूगल के माध्यम से साइन इन करें"
+
+#: members/templates/socialaccount/login.html:4
+msgid "You are about to sign in using a third-party account from Google."
+msgstr "आप गूगल के एक तृतीय-पक्ष खाते का उपयोग करके साइन इन करने वाले हैं।"
+
+
+msgid "Rainwater harvesting is a simple and effective method of collecting and storing rainwater for future use. It helps conserve water, reduces dependency on groundwater, and promotes sustainable living. Learn how this practice can benefit your community and the environment."
+msgstr "वर्षा जल संचयन वर्षा के पानी को एकत्रित और संग्रहीत करने का एक सरल और प्रभावी तरीका है। यह पानी की बचत करता है, भूजल पर निर्भरता कम करता है और सतत जीवनशैली को बढ़ावा देता है। जानें कि यह तरीका आपके समुदाय और पर्यावरण के लिए कैसे लाभकारी हो सकता है।"

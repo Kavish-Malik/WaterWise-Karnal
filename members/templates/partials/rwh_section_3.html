@@ -1,0 +1,105 @@
+{% load i18n %}
+
+<div class="section-block bg-white rounded-4 p-4 shadow-sm position-relative overflow-hidden" data-animate>
+  <style>
+    @keyframes blurZoomRight {
+      0% {
+        opacity: 0;
+        transform: translateX(-40px) scale(0.95);
+        filter: blur(6px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+      }
+    }
+
+    .fade-in-right {
+      animation: blurZoomRight 1.3s ease forwards;
+    }
+
+    .rwh-video-float-right {
+      float: right;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 420px;
+      height: 230px;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid #ffa726;
+      box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .rwh-video-float-right:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(255, 145, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .rwh-video-float-right {
+        float: none;
+        margin: 1.5rem auto;
+        display: block;
+        height: auto;
+      }
+    }
+  </style>
+
+  <div class="fade-in-right">
+    <!-- ✅ Embedded YouTube Video (Right) -->
+    <div class="rwh-video-float-right">
+      <iframe class="w-100 h-100"
+        src="https://www.youtube.com/embed/tZaWSMPfXs4"
+        title="{% trans "How to Do Rainwater Harvesting" %}"
+        frameborder="0"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+
+    <!-- ✅ Text Content with Detailed Points -->
+    <h4 class="fw-bold text-warning">🛠️ {% trans "How to Do Rainwater Harvesting" %}</h4>
+
+    <h6>{% trans "Understand Your Land and Water Flow" %}</h6>
+    <p>{% trans "Before a farmer can save rainwater, it’s important to understand how rain behaves on their own farm. The first rain of the season is like nature’s inspection. Go out in the field, watch where water runs off fast, where it stands, and where it disappears into the soil. These low points, slopes, and drainage paths show you exactly where bunds, trenches, ponds, or recharge pits will be most effective." %}</p>
+    <p>{% trans "Many farmers think harvesting water means building big tanks only, but real harvesting starts with knowing your land first." %}</p>
+
+    <h6>{% trans "Choosing the Right Method for Your Farm Size" %}</h6>
+    <ul>
+      <li><strong>{% trans "Small farms (up to 2 acres):" %}</strong> {% trans "Field bunding, small recharge pits, and roof water harvesting." %}</li>
+      <li><strong>{% trans "Medium farms (2–5 acres):" %}</strong> {% trans "Contour trenches, medium-sized farm ponds, and recharge shafts." %}</li>
+      <li><strong>{% trans "Large farms (5+ acres):" %}</strong> {% trans "Full setups with bunding, large ponds, multiple recharge pits, even check dams if there’s a village drain or nallah nearby." %}</li>
+    </ul>
+    <p><strong>{% trans "The rule is simple:" %}</strong> <em>{% trans "Jitna zyada zameen, utni zyada jagah paani rokne ki." %}</em> ({{ _("The more land you have, the more places to stop the water.") }})</p>
+
+    <h6>{% trans "Building Bunds, Trenches, and Ponds" %}</h6>
+    <p>{% trans "Bunds should be built across the slope using a tractor or manually, about 1–1.5 feet high. This slows water down and allows the soil to soak it in. Along with bunds, dig trenches 1.5–2 feet wide and deep, filled partially with sand or gravel." %}</p>
+    <p>{% trans "Farm ponds are dug where water naturally collects. Even a simple pond of 20–40 feet long, 15–20 feet wide, and 5–7 feet deep can store thousands of litres of water. If lined with plastic or cow dung–clay mix, seepage loss is reduced. Farmers in Haryana say this is enough for livestock water and emergency crop irrigation for several weeks." %}</p>
+    <p><strong>{% trans "Saving Estimate:" %}</strong> {% trans "One medium-sized pond can save farmers ₹20,000–₹40,000 per year in diesel and electricity costs by reducing borewell usage. Plus, water saved from runoff keeps crops alive in dry spells, preventing total crop loss which could mean lakhs of rupees in avoided loss." %}</p>
+
+    <h6>{% trans "Roof Water Harvesting for Home and Shed Water" %}</h6>
+    <p>{% trans "Installing gutters along tin-roofed cattle sheds, homes, or storage rooms is cheap but powerful. Collect that rainwater through filters (sand, gravel, charcoal) into tanks or recharge pits." %}</p>
+    <p>{% trans "In a 500 sq. ft. roof area, farmers can collect up to 25,000–30,000 litres of water per season. That’s enough for household use, animal needs, or recharge support." %}</p>
+
+    <h6>{% trans "Recharge Pits for Borewell Health" %}</h6>
+    <p>{% trans "Every borewell eventually dries out if there’s no recharge. By digging 4–6 feet deep pits near your tubewell, filled with gravel and sand, you allow water to reach down exactly where needed. This saves the extra ₹50,000–₹1,00,000 borewell deepening cost farmers face every 3–4 years." %}</p>
+
+    <h6>{% trans "Maintaining the System" %}</h6>
+    <p>{% trans "Water harvesting is not just about building once and forgetting. Farmers must clean roof filters before each monsoon, de-silt ponds once a year, and fix bund cracks quickly." %}</p>
+    <p>{% trans "If maintained well, these structures work for 10–15 years without major repair costs." %}</p>
+
+    <h6>{% trans "Why It’s Worth It: A Farmer’s Motivation" %}</h6>
+    <p>{% trans "Every drop of rain that leaves your land is lost income. Diesel, electricity, fertilizers — everything depends on water. Farmers who set up rainwater harvesting save ₹40,000–₹1,00,000 per year minimum through:" %}</p>
+    <ul>
+      <li>{% trans "Less borewell diesel cost" %}</li>
+      <li>{% trans "Less fertilizer washing away" %}</li>
+      <li>{% trans "Avoiding crop failure during dry spells" %}</li>
+    </ul>
+    <p><strong>{% trans "More than the money, it’s about control." %}</strong> {% trans "When farmers save water on their land, they’re not waiting for the government, panchayat, or weather gods." %}</p>
+    <p><em>{% trans "“Jo apne kheton ka paani apne hi zameen mein rokta hai, wohi asli samajhdaar kisaan hai.”" %}</em> ({{ _("The true wise farmer is the one who keeps his own field’s water within his own land.") }})</p>
+    <p>{% trans "This isn’t some modern city idea — it’s traditional farming wisdom, just adapted for today’s needs." %}</p>
+  </div>
+</div>

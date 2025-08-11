@@ -1,0 +1,83 @@
+{% load i18n %}
+
+<div class="section-block bg-white rounded-4 p-4 shadow-sm position-relative overflow-hidden" data-animate>
+  <style>
+    @keyframes floatIn {
+      0% {
+        transform: translateY(80px) scale(0.95);
+        opacity: 0;
+        filter: blur(8px);
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    .floating-text {
+      animation: floatIn 1.2s ease-out forwards;
+    }
+
+    .rwh-video-float {
+      float: right;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid #ffa726;
+      box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .rwh-video-float:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(255, 145, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .rwh-video-float {
+        float: none;
+        margin: 1.5rem auto;
+        display: block;
+      }
+    }
+  </style>
+
+  <div class="floating-text">
+    <h4 class="fw-bold text-warning">🚜 {% trans "What Rainwater Harvesting Is" %}</h4>
+
+    <!-- ✅ Embedded YouTube Video -->
+    <div class="rwh-video-float">
+      <iframe class="w-100" height="230" src="https://www.youtube.com/embed/q-_1DUdwUmo"
+        title="{% trans "Rainwater Harvesting" %}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p>{% trans "Rainwater harvesting (RWH), in farmer’s lingo, means catching rain when it falls on your fields, roofs, or sheds, and storing it for later use—either directly in ponds, farm bunds, underground tanks, or into the ground for recharging borewells. It’s like filling up your water tank during the rains so you’ve got a backup when skies turn dry. Simple, yet it works wonders for irrigation, livestock, and even domestic chores on the farm." %}</p>
+
+    <p><strong>{% trans "Types of RWH:" %}</strong></p>
+    <ol>
+      <li>{% trans "Roof water harvesting: Simple gutters and filters divert water from shed roofs into plastic/poly tanks or recharge pits. Farmers often call them “tapri tanks” or “underground sump” in local terms." %}</li>
+      <li>{% trans "Field bunding & contour trenches: Using tractors or cattle-led ploughing, bunds are built along slopes to hold rain, giving it time to soak in rather than run off." %}</li>
+      <li>{% trans "Farm ponds/johads: Dug-out pits (traditional johads) catch and store surplus rainwater—used later to irrigate fields or water livestock. In Haryana and Rajasthan, johads act like on-farm reservoirs." %}</li>
+      <li>{% trans "Recharge shafts and pits: These are drilled near the bund or under sheds to help rain soak down, strengthening groundwater reserves." %}</li>
+    </ol>
+
+    <p><strong>{% trans "On-Farm Benefits:" %}</strong></p>
+    <ul>
+      <li>{% trans "Boosts soil moisture: Trench and bund systems reduce runoff, so moisture lingers longer in your field." %}</li>
+      <li>{% trans "Improves crop yields: Water stays longer in the root zone—less stress on late-sown crops." %}</li>
+      <li>{% trans "Lowers pumping costs: Groundwater stays recharged, reducing the number of hours you run tubewells." %}</li>
+      <li>{% trans "Reduces soil erosion: Bunds hold back topsoil; trenches slow water, saving your precious earth." %}</li>
+      <li>{% trans "Farm resilience in dry spells: Even a short dry spell won’t destroy your crop if the soil still has some moisture stored." %}</li>
+    </ul>
+
+    <p>{% trans "For farmers across Haryana and Punjab, rainwater harvesting isn’t some foreign tech—it’s farm smarts. It’s just about working with the land you’ve got, catching what nature gives, and saving every drop." %}</p>
+  </div>
+</div>

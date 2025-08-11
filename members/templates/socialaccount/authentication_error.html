@@ -1,0 +1,9 @@
+{% extends "pages/login.html" %}
+
+{% block content %}
+  <div class="login-box">
+    <h2>Authentication Error</h2>
+    <p>Something went wrong while signing in with Google.</p>
+    <a href="{% url 'account_login' %}" class="btn btn-primary">Try Again</a>
+  </div>
+{% endblock %}

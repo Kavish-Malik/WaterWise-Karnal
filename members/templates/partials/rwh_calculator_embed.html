@@ -1,0 +1,75 @@
+{% load i18n %}
+<div class="container my-5" id="calculator-section">
+  <div class="glass-box p-4 shadow-lg" data-animate>
+    <h3 class="text-center text-warning fw-bold mb-4 title-glow">
+      💰 {% trans "Calculate Your Savings by Using Water Harvesting" %}
+    </h3>
+
+    <form id="rwhCalculator" class="row g-3 text-dark">
+      <div class="col-md-6">
+        <label for="roofArea" class="form-label">{% trans "Rooftop Area (sq.m)" %}</label>
+        <input type="number" class="form-control" id="roofArea" required>
+      </div>
+      <div class="col-md-6">
+        <label for="rainfall" class="form-label">{% trans "Annual Rainfall (mm)" %}</label>
+        <input type="number" class="form-control" id="rainfall" value="600" required>
+      </div>
+      <div class="col-md-6">
+        <label for="surfaceType" class="form-label">{% trans "Surface Type" %}</label>
+        <select class="form-select" id="surfaceType" required>
+          <option value="concrete">{% trans "Concrete" %}</option>
+          <option value="tile">{% trans "Tile" %}</option>
+          <option value="soil">{% trans "Soil" %}</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="waterRate" class="form-label">{% trans "Water Rate (₹/KL)" %}</label>
+        <input type="number" class="form-control" id="waterRate" value="35" required>
+      </div>
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-orange px-5 py-2">{% trans "Calculate" %}</button>
+      </div>
+    </form>
+
+    <div class="result-box mt-4 text-center" style="display:none;">
+      <h5 class="fw-bold mb-2">{% trans "Estimated Harvested Water:" %} <span id="resultVolume" class="text-warning"></span> {% trans "KL" %}</h5>
+      <h5 class="fw-bold">{% trans "Estimated Cost Savings:" %} ₹ <span id="resultSavings" class="text-success"></span></h5>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .glass-box {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+</style>
+
+<script>
+  document.getElementById("rwhCalculator").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const area = parseFloat(document.getElementById("roofArea").value);
+    const rainfall = parseFloat(document.getElementById("rainfall").value);
+    const surface = document.getElementById("surfaceType").value;
+    const waterRate = parseFloat(document.getElementById("waterRate").value);
+
+    const efficiencies = {
+      concrete: 0.85,
+      tile: 0.75,
+      soil: 0.5
+    };
+
+    const efficiency = efficiencies[surface] || 0.5;
+    const volumeKL = ((area * rainfall * efficiency) / 100000).toFixed(2);
+    const savings = (volumeKL * waterRate).toFixed(2);
+
+    document.getElementById("resultVolume").innerText = volumeKL;
+    document.getElementById("resultSavings").innerText = savings;
+    document.querySelector(".result-box").style.display = "block";
+  });
+</script>

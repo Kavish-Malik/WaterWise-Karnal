@@ -1,0 +1,26 @@
+{% load i18n %}
+
+<div class="row align-items-center section-block" data-animate>
+  <div class="col-md-6">
+    <h4>{% trans "🌟 The Final Thought" %}</h4>
+    <p>{% trans "Farming today is not about only hard work; it’s about smart work. Combining rainwater harvesting with modern irrigation, crop planning, mulching, and technology makes farming sustainable." %}</p>
+    <p>{% trans "As many successful farmers say:" %}</p>
+    <blockquote class="blockquote fst-italic">
+      {% blocktrans %}“Pahele paani sambhal, fir kheti sambhal.”{% endblocktrans %}<br>
+      <small>{% trans "First save your water, then focus on farming." %}</small>
+    </blockquote>
+    <p>{% trans "When rainwater harvesting is combined with smart practices, farmers reduce costs, increase yields, and make sure their fields stay productive not just for one season, but for generations." %}</p>
+  </div>
+
+  <div class="col-md-6 iframe-wrapper">
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.youtube.com/embed/ZVK1dpP1H3U"
+        title="{% trans "Final Motivation Rainwater Harvesting" %}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>

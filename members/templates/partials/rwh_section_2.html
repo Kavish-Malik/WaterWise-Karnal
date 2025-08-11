@@ -1,0 +1,109 @@
+{% load i18n %}
+
+<div class="section-block bg-white rounded-4 p-4 shadow-sm position-relative overflow-hidden" data-animate>
+  <style>
+    @keyframes fadeSlideLeft {
+      0% {
+        transform: translateX(40px) scale(0.97);
+        opacity: 0;
+        filter: blur(4px);
+      }
+      100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    .fade-in-left {
+      animation: fadeSlideLeft 1.2s ease forwards;
+    }
+
+    .rwh-video-float-left {
+      float: left;
+      margin-right: 1.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid #ffa726;
+      box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .rwh-video-float-left:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(255, 145, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .rwh-video-float-left {
+        float: none;
+        margin: 1.5rem auto;
+        display: block;
+      }
+    }
+  </style>
+
+  <div class="fade-in-left">
+    <!-- ✅ Embedded YouTube Video (on Left) -->
+    <div class="rwh-video-float-left">
+      <iframe class="w-100" height="230"
+        src="https://www.youtube.com/embed/KokPz96a4jI"
+        title="{% trans "Why Rainwater Harvesting is Important" %}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- ✅ Text Block -->
+    <h4 class="fw-bold text-warning">💡 {% trans "Why Rainwater Harvesting Is Important" %}</h4>
+    <p>{% trans "If you ask any experienced farmer in Haryana or Punjab, they’ll tell you directly:" %}</p>
+    <p><strong>{% trans "Without water, the farm dies." %}</strong> {% trans "That’s why rainwater harvesting (RWH) is not just a good idea — it’s a necessity." %}</p>
+    <p>{% trans "Especially in places like Karnal, where farmers in the video say:" %}</p>
+    <p><em>{% trans "Before, water was available year-round; now even three months is hard." %}</em></p>
+
+    <hr>
+
+    <h6>1️⃣ {% trans "Groundwater Tube-Wells Drying Up" %}</h6>
+    <ul>
+      <li>{% trans "In the first three minutes of the Karnal farmer’s video, he mentions:" %} <em>{% trans "Even a 500 ft borewell failed." %}</em></li>
+      <li>{% trans "Farmers in Haryana rely heavily on borewells. But borewell water isn’t unlimited — if the underground water table isn’t recharged, it finishes." %}</li>
+      <li>{% trans "Rainwater harvesting helps recharge the aquifer. When rainwater seeps down through pits and trenches, it fills up those empty spaces underground that borewells tap into." %}</li>
+      <li>{% trans "Without recharge, you’ll find yourself calling JCB operators again and again:" %}<br><strong>{% trans "Dig me another borewell — costing thousands, and there’s still no guarantee of water." %}</strong></li>
+    </ul>
+
+    <h6>2️⃣ {% trans "Crops Suffer in Dry Spells" %}</h6>
+    <ul>
+      <li>{% trans "A farmer says in the video:" %} <em>{% trans "Two days without rain and the crop is ruined." %}</em></li>
+      <li>{% trans "Especially for paddy, wheat, or sugarcane, water at the right stage is crucial." %}</li>
+      <li>{% trans "RWH means when there is a 5–10 day dry spell, there’s still water in your bunds, ponds, or recharge pit helping the soil retain moisture." %}</li>
+      <li>{% trans "Even in cotton or pulses, soil moisture from RWH bunds keeps roots cool and hydrated." %}</li>
+    </ul>
+
+    <h6>3️⃣ {% trans "Saving Fertile Soil" %}</h6>
+    <ul>
+      <li>{% trans "Without rainwater control, what happens?" %} <strong>{% trans "Runoff." %}</strong> {% trans "Soil washes away, along with the fertilizer." %}</li>
+      <li>{% trans "When rain hits hard and there’s no bund or trench, topsoil — the most fertile layer — goes into drains." %}</li>
+      <li>{% trans "Farmers lose both seed-bed quality and money spent on urea, DAP, and potash." %}</li>
+      <li>{% trans "RWH bunding stops that. Water is slowed down, giving it time to sink into the field while holding the soil in place." %}</li>
+    </ul>
+
+    <h6>4️⃣ {% trans "Cost Cutting — Less Diesel, Less Electricity" %}</h6>
+    <ul>
+      <li>{% trans "Less borewell use: If your groundwater is topped up naturally, you won’t have to run diesel pumps or electric tubewells as much." %}</li>
+      <li>{% trans "One Karnal farmer says:" %} <em>{% trans "Electric bill cut in half after making bunds and pits." %}</em></li>
+      <li>{% trans "Even livestock water needs — cows, buffaloes, goats — can be handled by stored rainwater in farm ponds." %}</li>
+    </ul>
+
+    <h6>5️⃣ {% trans "Future Proofing the Farm" %}</h6>
+    <ul>
+      <li>{% trans "With climate change, monsoon patterns are shifting. Sometimes rains come early, sometimes late. Sometimes all in one shot." %}</li>
+      <li>{% trans "Smart farmers think ahead:" %} <em>{% trans "Who saves water today will save the farm tomorrow." %}</em></li>
+      <li>{% trans "That’s why rainwater harvesting is part of government advisories now. Even PMKSY (Pradhan Mantri Krishi Sinchayee Yojana) supports it." %}</li>
+      <li>{% blocktrans %}Visit: <a href="https://pmksy.gov.in/" target="_blank">https://pmksy.gov.in/</a>{% endblocktrans %}</li>
+    </ul>
+  </div>
+</div>

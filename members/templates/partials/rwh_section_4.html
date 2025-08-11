@@ -1,0 +1,93 @@
+{% load i18n %}
+
+<div class="section-block bg-white rounded-4 p-4 shadow-sm position-relative overflow-hidden" data-animate>
+  <style>
+    @keyframes floatZoomLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(40px) scale(0.95);
+        filter: blur(6px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+      }
+    }
+
+    .fade-in-left-rwh {
+      animation: floatZoomLeft 1.3s ease forwards;
+    }
+
+    .rwh-video-float-left {
+      float: left;
+      margin-right: 1.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 420px;
+      height: 230px;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid #ffa726;
+      box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .rwh-video-float-left:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(255, 145, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .rwh-video-float-left {
+        float: none;
+        margin: 1.5rem auto;
+        display: block;
+        height: auto;
+      }
+    }
+  </style>
+
+  <div class="fade-in-left-rwh">
+    <!-- ✅ Embedded YouTube Video (Left) -->
+    <div class="rwh-video-float-left">
+      <iframe class="w-100 h-100"
+        src="https://www.youtube.com/embed/t5HPU0lVUH8"
+        title="{% trans "Smart Farming Practices with RWH" %}"
+        frameborder="0"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+
+    <!-- ✅ Text Content -->
+    <h4 class="fw-bold text-warning">{% trans "🌾 Smart Farming Practices Along with Rainwater Harvesting" %}</h4>
+    <p>{% blocktrans %}Once a farmer has set up rainwater harvesting on their land, the next smart step is using that saved water wisely. Water alone does not guarantee a successful crop. It is about how, when, and where the water is used, along with other modern farming practices. In today’s time, with rising costs of fertilizers, diesel, and labour, smart farming means getting maximum output with minimum wastage.{% endblocktrans %}</p>
+
+    <h6>{% trans "Combining Rainwater Harvesting with Drip and Sprinkler Systems" %}</h6>
+    <p>{% blocktrans %}The first and most effective smart farming step is using drip irrigation and sprinkler systems. Drip systems deliver water directly to the root zone of plants. Even if you have stored water from rainwater harvesting in a farm pond or recharge pit, using it through drip ensures that not even one drop is wasted.{% endblocktrans %}</p>
+    <p>{% blocktrans %}For example, a farmer with one acre of vegetables or fruit trees using drip irrigation saves up to 40–50% water compared to flood irrigation. This is especially important when water is limited. Sprinklers are also useful for crops like wheat or pulses where drip might not fit.{% endblocktrans %}</p>
+    <p>{% blocktrans %}Many farmers combine these systems with their ponds. Water is pumped from the pond into the drip lines, cutting down dependency on borewell pumping.{% endblocktrans %}</p>
+
+    <h6>{% trans "Timing Your Irrigation with Weather Awareness" %}</h6>
+    <p>{% blocktrans %}Another smart practice is not irrigating blindly. Farmers should keep track of weather forecasts. Many free mobile apps now show upcoming rain predictions. By checking before starting irrigation, farmers can avoid overwatering. This saves water, diesel, and prevents fertilizer wash-off.{% endblocktrans %}</p>
+    <p>{% blocktrans %}For example, if rain is expected in 2–3 days, farmers can skip one irrigation round and let the rain do the job naturally.{% endblocktrans %}</p>
+
+    <h6>{% trans "Using Mulching to Preserve Moisture" %}</h6>
+    <p>{% blocktrans %}Once rainwater has been absorbed into the soil, the next step is preventing that moisture from evaporating quickly. Smart farmers use mulching — covering soil with straw, dry leaves, or plastic sheets. This keeps the soil cool, prevents weed growth, and saves up to 25–30% more water over the season.{% endblocktrans %}</p>
+    <p>{% blocktrans %}Even small farmers growing vegetables like tomatoes, cucumbers, or chillies can use mulch for better results using their harvested rainwater.{% endblocktrans %}</p>
+
+    <h6>{% trans "Crop Planning According to Water Availability" %}</h6>
+    <p>{% blocktrans %}Farmers practicing smart farming don’t just grow what everyone else is growing. They check how much water is available from rainwater harvesting and then choose crops accordingly.{% endblocktrans %}</p>
+    <ul>
+      <li>{% trans "Farmers with small ponds may focus on vegetables or pulses that need less water." %}</li>
+      <li>{% trans "Those with bigger water storage can plant paddy or sugarcane in controlled plots." %}</li>
+      <li>{% trans "Some farmers rotate crops — growing water-heavy crops only once every two or three seasons while focusing on low-water crops in between." %}</li>
+    </ul>
+    <p>{% trans "This strategy protects both water resources and soil health." %}</p>
+
+    <h6>{% trans "Government Schemes and Support" %}</h6>
+    <p>{% blocktrans %}Smart farmers also take advantage of government programs like PMKSY (Pradhan Mantri Krishi Sinchayee Yojana) and other state-level subsidies for drip systems, pond construction, and rainwater harvesting structures. These schemes cover 40–60% of the setup cost.{% endblocktrans %}</p>
+    <p>{% blocktrans %}It’s important to visit your local agriculture office or Krishi Vigyan Kendra (KVK) and ask about ongoing schemes rather than missing out.{% endblocktrans %}</p>
+  </div>
+</div>
