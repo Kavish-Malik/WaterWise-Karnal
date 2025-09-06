@@ -1,1 +1,1 @@
-web: waterwise-karnal.wsgi
+web: gunicorn water.wsgi --log-file -
