@@ -69,7 +69,8 @@ def extract_karnal_data():
                     continue
 
             if depth is not None:
-                print(f"✅ {location_clean} | {depth} m | {sample_date}")
+                # Print the data row clearly in the terminal
+                print(f"✅ Location: {location_clean} | Depth: {depth} m | Sample Date: {sample_date}")
                 data_rows.append({
                     'name': location_clean,
                     'district': 'Karnal',
@@ -87,7 +88,7 @@ def upload_groundwater_levels():
     entries = extract_karnal_data()
     count = 0
 
-    # 🚨 Delete previous water level entries for Karnal
+    # Delete previous water level entries for Karnal
     GroundwaterData.objects.filter(
         place__district='Karnal',
         parameter='Water Level'

@@ -195,4 +195,3 @@ from django.shortcuts import render
 
 def rainwater_harvesting(request):
     return render(request, 'pages/rainwater.html')
-

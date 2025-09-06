@@ -1,10 +1,10 @@
-{% load static socialaccount %}  {# Important: load 'socialaccount' tag library #}
+{% load static socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Login - WaterWise</title>
- <link rel="stylesheet" href="{% static 'assets/css/soft-ui-dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/soft-ui-dashboard.css' %}">
 
   <style>
     body {
@@ -51,13 +51,10 @@
 <body>
   <div class="login-box">
     <h2>Welcome to <span style="color:#007BFF">WaterWise</span></h2>
-    <p>sign in with Google to continue</p>
-  <a href="{% provider_login_url 'google' process='login' %}" class="btn-google">
-  <img src="{% static 'assets/img/google-logo.png' %}" alt="Google Logo">
-  Sign in with Google
-</a>
-
-</a>
+    <p>Sign in with Google to continue</p>
+    <a href="{% provider_login_url 'google' process='login' %}" class="btn-google">
+      <img src="{% static 'assets/img/google-logo.png' %}" alt="Google Logo">
+      Sign in with Google
     </a>
   </div>
 </body>

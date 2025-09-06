@@ -1,0 +1,333 @@
+import ssl
+import certifi
+
+ssl._create_default_https_context = ssl.create_default_context(cafile=certifi.where())
+
+
+# Monkeypatch ssl to use certifi cert bundle
+
+
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+# Initialize Firebase Admin SDK — update path to your JSON key file
+cred = credentials.Certificate("/Users/kavishmalik/Desktop/water/waterwise-karnal-1410-firebase-adminsdk-fbsvc-4e5e2d8a96.json")
+firebase_admin.initialize_app(cred)
+
+db = firestore.client()
+
+# Paste your places list here   
+places = [
+    {'name': 'Alipur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Amin', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Amupur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Anchla', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Andhera', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Anjanthali', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Ardana', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Assandh', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Badson', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Bahri', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Balhera-m', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Balla', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Balu', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Bansa', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Baragaon', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Barani', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Barthal', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Bastali', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Beholpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Biana', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Bijna', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Brass', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Budanpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chakda', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chandsamand', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chaura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chirao', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chochra', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Choor', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chorkharsa', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Dabarthala', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Dachar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Dadupur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Darar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Dhanaura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Dhomsi(shallow)', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Domsi', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Faridpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gagsina', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gangateri', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Garhi', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gharaunda', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Gholpura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gogripur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gohida', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Goli', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gondar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gondhar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Gudha', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Indri', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Islam', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jainpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jaisinghpura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jalmana', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Janesron', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jani', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jaroli', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jhanjari', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jundla1', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kachhwa', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kalampura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kalheri', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kalri', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kalsi', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kalsora', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kambopura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Khanpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'KheriNaru-S', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Khizrabad', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kohnd', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kurlan', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Kutail', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Majra', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Makhala', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Manak', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Manjura', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mehmadpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mormazra', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mound', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Munak', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mundh-dw', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mundi', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Musepur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Mustafabad', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nabipur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nalipur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nalvi', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nanhera', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Naru', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nasirpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Nilokheri', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Nissing', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Paccakhera-dw', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Padhana-DW', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Phurlak', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Phusgarh', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Popra', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Pundrak', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Rambha', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Randauli', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Ranwar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Rasin', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Rattak', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Rindal', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Risalwa', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Sadarpur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Sagga', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Salwan-B', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Sambli-M', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Sambli-S', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Samora1', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Subri', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Taprana', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Taraori', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'Udana', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Uplani', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Newal', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Jundla(shallow)', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Karnal', 'type': 'town', 'district': 'Karnal'},
+    {'name': 'KheriNaru-D', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'KheriNaru-M', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Islam Nagar', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Garhi Khajur', 'type': 'village', 'district': 'Karnal'},
+    {'name': 'Chorpur', 'type': 'village', 'district': 'Karnal'},
+]
+
+
+# Paste your groundwater levels list here
+groundwater_levels = [
+    {'name': 'Alipur', 'depth': 35.55, 'sample_date': '2022-11-01'},
+    {'name': 'Amin', 'depth': 36.65, 'sample_date': '2022-06-01'},
+    {'name': 'Amupur', 'depth': 33.89, 'sample_date': '2022-11-01'},
+    {'name': 'Amupur', 'depth': 30.12, 'sample_date': '2022-11-01'},
+    {'name': 'Anchla', 'depth': 12.4, 'sample_date': '2022-11-01'},
+    {'name': 'Andhera', 'depth': 11.05, 'sample_date': '2023-01-01'},
+    {'name': 'Anjanthali', 'depth': 25.87, 'sample_date': '2022-11-01'},
+    {'name': 'Ardana', 'depth': 18.3, 'sample_date': '2022-11-01'},
+    {'name': 'Assandh', 'depth': 20.95, 'sample_date': '2022-11-01'},
+    {'name': 'Badson-', 'depth': 34.25, 'sample_date': '2022-08-01'},
+    {'name': 'Bahri', 'depth': 31.05, 'sample_date': '2022-11-01'},
+    {'name': 'Balla-', 'depth': 19.65, 'sample_date': '2022-08-01'},
+    {'name': 'Balu', 'depth': 30.3, 'sample_date': '2022-11-01'},
+    {'name': 'Bansa', 'depth': 24.93, 'sample_date': '2023-01-01'},
+    {'name': 'Baragaon', 'depth': 15.9, 'sample_date': '2022-11-01'},
+    {'name': 'Barani', 'depth': 34.23, 'sample_date': '2022-11-01'},
+    {'name': 'Barthal', 'depth': 31.52, 'sample_date': '2022-11-01'},
+    {'name': 'Bastali', 'depth': 30.24, 'sample_date': '2022-11-01'},
+    {'name': 'Beholpur', 'depth': 29.62, 'sample_date': '2022-11-01'},
+    {'name': 'Biana', 'depth': 9.1, 'sample_date': '2022-11-01'},
+    {'name': 'Bijna', 'depth': 15.75, 'sample_date': '2022-11-01'},
+    {'name': 'Brass', 'depth': 32.45, 'sample_date': '2022-11-01'},
+    {'name': 'Budanpur', 'depth': 7.14, 'sample_date': '2022-11-01'},
+    {'name': 'Chakda', 'depth': 29.82, 'sample_date': '2022-11-01'},
+    {'name': 'Chandsamand', 'depth': 8.45, 'sample_date': '2022-11-01'},
+    {'name': 'Chaura', 'depth': 20.0, 'sample_date': '2023-01-01'},
+    {'name': 'Chirao', 'depth': 21.95, 'sample_date': '2023-01-01'},
+    {'name': 'Chochra', 'depth': 31.1, 'sample_date': '2022-11-01'},
+    {'name': 'Choor', 'depth': 34.54, 'sample_date': '2022-06-01'},
+    {'name': 'Chorkharsa', 'depth': 30.65, 'sample_date': '2022-11-01'},
+    {'name': 'Dabarthala', 'depth': 27.9, 'sample_date': '2022-11-01'},
+    {'name': 'Dachar', 'depth': 29.95, 'sample_date': '2022-11-01'},
+    {'name': 'Dadupur', 'depth': 22.0, 'sample_date': '2022-11-01'},
+    {'name': 'Darar', 'depth': 18.03, 'sample_date': '2023-01-01'},
+    {'name': 'Dhanaura-', 'depth': 7.1, 'sample_date': '2022-11-01'},
+    {'name': 'Dhomsi(shallow)', 'depth': 25.65, 'sample_date': '2023-01-01'},
+    {'name': 'Domsi', 'depth': 27.73, 'sample_date': '2022-11-01'},
+    {'name': 'Faridpur', 'depth': 24.77, 'sample_date': '2023-01-01'},
+    {'name': 'Gagsina', 'depth': 10.5, 'sample_date': '2022-11-01'},
+    {'name': 'Gangateri', 'depth': 29.7, 'sample_date': '2022-11-01'},
+    {'name': 'Garhi', 'depth': 13.2, 'sample_date': '2022-06-01'},
+    {'name': 'Gharaunda', 'depth': 32.92, 'sample_date': '2022-11-01'},
+    {'name': 'Gholpura', 'depth': 28.55, 'sample_date': '2022-11-01'},
+    {'name': 'Gogripur', 'depth': 8.45, 'sample_date': '2022-11-01'},
+    {'name': 'Gohida', 'depth': 30.18, 'sample_date': '2022-08-01'},
+    {'name': 'Goli', 'depth': 14.6, 'sample_date': '2022-11-01'},
+    {'name': 'Gondar', 'depth': 33.9, 'sample_date': '2023-01-01'},
+    {'name': 'Gondhar', 'depth': 30.8, 'sample_date': '2022-08-01'},
+    {'name': 'Gudha', 'depth': 9.35, 'sample_date': '2022-11-01'},
+    {'name': 'Indri', 'depth': 12.65, 'sample_date': '2022-11-01'},
+    {'name': 'Islam', 'depth': 7.66, 'sample_date': '2022-06-01'},
+    {'name': 'Jainpur', 'depth': 7.15, 'sample_date': '2022-11-01'},
+    {'name': 'Jaisinghpura', 'depth': 19.7, 'sample_date': '2022-11-01'},
+    {'name': 'Jalmana', 'depth': 31.48, 'sample_date': '2022-06-01'},
+    {'name': 'Janesron-', 'depth': 16.25, 'sample_date': '2023-01-01'},
+    {'name': 'Jani', 'depth': 11.15, 'sample_date': '2022-11-01'},
+    {'name': 'Jaroli', 'depth': 5.22, 'sample_date': '2022-06-01'},
+    {'name': 'Jhanjari', 'depth': 14.68, 'sample_date': '2023-01-01'},
+    {'name': 'Jundla1', 'depth': 21.65, 'sample_date': '2023-01-01'},
+    {'name': 'Kachhwa', 'depth': 23.6, 'sample_date': '2022-08-01'},
+    {'name': 'Kalampura', 'depth': 22.95, 'sample_date': '2022-11-01'},
+    {'name': 'Kalheri', 'depth': 32.28, 'sample_date': '2022-11-01'},
+    {'name': 'Kalri', 'depth': 6.47, 'sample_date': '2022-06-01'},
+    {'name': 'Kalsi', 'depth': 28.04, 'sample_date': '2022-11-01'},
+    {'name': 'Kalsora', 'depth': 8.35, 'sample_date': '2022-11-01'},
+    {'name': 'Kambopura', 'depth': 19.15, 'sample_date': '2023-01-01'},
+    {'name': 'Khanpur', 'depth': 17.05, 'sample_date': '2022-11-01'},
+    {'name': 'KheriNaru-S', 'depth': 17.0, 'sample_date': '2022-11-01'},
+    {'name': 'Khizrabad', 'depth': 29.65, 'sample_date': '2022-11-01'},
+    {'name': 'Kohnd', 'depth': 33.95, 'sample_date': '2022-08-01'},
+    {'name': 'Kurlan', 'depth': 25.85, 'sample_date': '2022-11-01'},
+    {'name': 'Kutail', 'depth': 25.82, 'sample_date': '2022-06-01'},
+    {'name': 'Majra', 'depth': 32.17, 'sample_date': '2022-06-01'},
+    {'name': 'Makhala', 'depth': 6.7, 'sample_date': '2023-01-01'},
+    {'name': 'Manak', 'depth': 28.89, 'sample_date': '2022-08-01'},
+    {'name': 'Manjura', 'depth': 26.2, 'sample_date': '2023-01-01'},
+    {'name': 'Mehmadpur', 'depth': 14.55, 'sample_date': '2023-01-01'},
+    {'name': 'Mormazra', 'depth': 19.6, 'sample_date': '2022-11-01'},
+    {'name': 'Mound', 'depth': 30.4, 'sample_date': '2022-06-01'},
+    {'name': 'Munak', 'depth': 8.66, 'sample_date': '2022-11-01'},
+    {'name': 'Mundh-dw', 'depth': 29.34, 'sample_date': '2022-11-01'},
+    {'name': 'Mundi', 'depth': 7.8, 'sample_date': '2022-08-01'},
+    {'name': 'Musepur', 'depth': 6.9, 'sample_date': '2022-11-01'},
+    {'name': 'Mustafabad', 'depth': 5.45, 'sample_date': '2022-11-01'},
+    {'name': 'Nabipur', 'depth': 8.7, 'sample_date': '2022-11-01'},
+    {'name': 'Nalipur', 'depth': 11.78, 'sample_date': '2023-01-01'},
+    {'name': 'Nalvi', 'depth': 16.66, 'sample_date': '2022-08-01'},
+    {'name': 'Nanhera', 'depth': 7.02, 'sample_date': '2022-08-01'},
+    {'name': 'Naru', 'depth': 21.0, 'sample_date': '2022-08-01'},
+    {'name': 'Nasirpur', 'depth': 8.83, 'sample_date': '2023-01-01'},
+    {'name': 'Nilokheri', 'depth': 24.1, 'sample_date': '2022-11-01'},
+    {'name': 'Nisang', 'depth': 34.2, 'sample_date': '2023-01-01'},
+    {'name': 'Paccakhera-dw', 'depth': 27.5, 'sample_date': '2022-11-01'},
+    {'name': 'Padhana-DW', 'depth': 26.75, 'sample_date': '2022-11-01'},
+    {'name': 'Phurlak', 'depth': 22.4, 'sample_date': '2022-11-01'},
+    {'name': 'Phusgarh', 'depth': 20.13, 'sample_date': '2022-11-01'},
+    {'name': 'Popra', 'depth': 31.1, 'sample_date': '2022-11-01'},
+    {'name': 'Pundrak', 'depth': 20.48, 'sample_date': '2022-11-01'},
+    {'name': 'Rambha', 'depth': 7.11, 'sample_date': '2023-01-01'},
+    {'name': 'Randauli', 'depth': 8.78, 'sample_date': '2022-08-01'},
+    {'name': 'Ranwar', 'depth': 19.58, 'sample_date': '2022-11-01'},
+    {'name': 'Rasin', 'depth': 18.5, 'sample_date': '2022-11-01'},
+    {'name': 'Rattak', 'depth': 28.0, 'sample_date': '2022-11-01'},
+    {'name': 'Rindal', 'depth': 11.58, 'sample_date': '2022-11-01'},
+    {'name': 'Risalwa', 'depth': 25.4, 'sample_date': '2022-11-01'},
+    {'name': 'Sadarpur', 'depth': 9.2, 'sample_date': '2022-11-01'},
+    {'name': 'Sagga', 'depth': 28.98, 'sample_date': '2022-11-01'},
+    {'name': 'Salwan-B', 'depth': 28.09, 'sample_date': '2022-08-01'},
+    {'name': 'Sambli-M', 'depth': 30.17, 'sample_date': '2022-08-01'},
+    {'name': 'Sambli-S', 'depth': 30.39, 'sample_date': '2022-08-01'},
+    {'name': 'Samora1', 'depth': 7.51, 'sample_date': '2022-11-01'},
+    {'name': 'Subri', 'depth': 16.88, 'sample_date': '2023-01-01'},
+    {'name': 'Taprana', 'depth': 14.58, 'sample_date': '2022-11-01'},
+    {'name': 'Taraori', 'depth': 24.0, 'sample_date': '2022-11-01'},
+    {'name': 'Udana', 'depth': 35.55, 'sample_date': '2022-11-01'},
+    {'name': 'Uplani', 'depth': 29.4, 'sample_date': '2023-01-01'},
+    {'name': 'Balhera-m', 'depth': 14.61, 'sample_date': '2022-08-01'},
+    {'name': 'Chorpur', 'depth': 8.34, 'sample_date': '2022-08-01'},
+    {'name': 'Garhi', 'depth': 15.3, 'sample_date': '2022-06-01'},
+    {'name': 'Islam', 'depth': 9.04, 'sample_date': '2022-06-01'},
+    {'name': 'Islam', 'depth': 7.2, 'sample_date': '2022-06-01'},
+    {'name': 'Jundla(shallow)', 'depth': 25.7, 'sample_date': '2022-08-01'},
+    {'name': 'Karnal', 'depth': 14.56, 'sample_date': '2022-06-01'},
+    {'name': 'KheriNaru-D', 'depth': 15.77, 'sample_date': '2022-08-01'},
+    {'name': 'KheriNaru-M', 'depth': 13.62, 'sample_date': '2022-08-01'},
+    {'name': 'Kutail', 'depth': 25.85, 'sample_date': '2022-06-01'},
+    {'name': 'Mound', 'depth': 31.12, 'sample_date': '2022-08-01'},
+    {'name': 'Mundh', 'depth': 30.67, 'sample_date': '2022-11-01'},
+    {'name': 'Newal', 'depth': 14.98, 'sample_date': '2022-08-01'},
+    {'name': 'Phurlak', 'depth': 26.7, 'sample_date': '2022-06-01'},
+    {'name': 'Sekhpura', 'depth': 18.23, 'sample_date': '2022-11-01'},
+    {'name': 'Shekhpur', 'depth': 26.45, 'sample_date': '2022-08-01'},
+    {'name': 'Shekhpura', 'depth': 18.07, 'sample_date': '2022-11-01'},
+]
+
+
+def clear_karnal_entries():
+    """Delete all groundwater_levels docs with district 'Karnal'"""
+    coll_ref = db.collection('groundwater_levels')
+    query = coll_ref.where('district', '==', 'Karnal')
+    docs = query.stream()
+
+    deleted_count = 0
+    for doc in docs:
+        doc.reference.delete()
+        deleted_count += 1
+    print(f"🧹 Deleted {deleted_count} previous 'Water Level' entries for Karnal.")
+
+def upload_places():
+    coll_ref = db.collection('groundwater_places')
+    batch = db.batch()
+    for place in places:
+        doc_ref = coll_ref.document(place['name'].replace(' ', '_'))
+        batch.set(doc_ref, place)
+    batch.commit()
+    print(f"✅ Uploaded {len(places)} groundwater place entries.")
+
+def upload_groundwater_levels():
+    coll_ref = db.collection('groundwater_levels')
+    batch = db.batch()
+    for entry in groundwater_levels:
+        # Match district and type by place name
+        matching_places = [p for p in places if p['name'] == entry['name']]
+        if not matching_places:
+            continue
+        place = matching_places[0]
+
+        doc_id = f"{entry['name'].replace(' ', '_')}_{entry['sample_date']}"
+        doc_ref = coll_ref.document(doc_id)
+        data = {
+            'name': entry['name'],
+            'district': place['district'],
+            'type': place['type'],
+            'depth': entry['depth'],
+            'sample_date': entry['sample_date'],
+        }
+        batch.set(doc_ref, data)
+    batch.commit()
+    print(f"✅ Uploaded {len(groundwater_levels)} groundwater level entries for Karnal.")
+
+if __name__ == '__main__':
+    clear_karnal_entries()
+    upload_places()
+    upload_groundwater_levels()
