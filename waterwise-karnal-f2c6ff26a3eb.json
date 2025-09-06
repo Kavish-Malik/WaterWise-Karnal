@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "waterwise-karnal",
+  "private_key_id": "f2c6ff26a3eb04caf9f4302ebb7c6490066be346",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTM4+pZkx8RKtD\nczBK//yYZNj9OWJKo1NCNKdzlqlAL6pxSTQ9PyAMXx21E8MtjCUgsd7Yh6l4ziAY\nZB2jxjaxE4DfoHZfh11k0CgvvfwSq7ex60HDzOSxPNSpt5vqlpDa+YUmnYg0NgGm\nTbROmX6/FDYrs1LFmsInDsR1heQsOfn3XBbRAN1+b+A7P0dePCVOO9jyhhqW9gSy\nbLoQJeZLqDtMNVqLa+LiPvnI6gCy6oIkK2eqnwea1hr9VTNg1jQzPP0Ix1fGMUS9\n4fFhOhH9GwISIuIMbcGP7VufGJDBpjwdgtSCoEqw6UjzpzkLisz9lgRjWuuYnzEK\n4UzEzYJXAgMBAAECggEAFYTAs8HN3oYgl6lk15S9Z8mJUkOb1X75PLBLX2Y6WGUt\njd1SNUCj7fQYUsVwssip/8AftHAeFEZBfuVfH7tSVzhlfmNwVsteo1GSG/XUzmeF\n5TAobeAHwlyFo8UmswAkQitU0FpnRj/lFcyqUlfRUians6F8YtB3Ilj0K1qOT52+\ngm6GOBi4tIVay3rPt2x+Y3Jxn2ecL6vE47/P2djUex+2QsA1aTT04bfx0JnKEgRY\nCNUPpOV+qAe4+5WctZxACZcTfAv+OJQTLt+lqe3mOlNpWFHUICoWB2fTfF6AXOUz\nvyDMSmZqc+7uMIi2loqR4FJ1z6Eysv1EYh+ePDikAQKBgQDyrtOmvLwyoruCdM13\njRGOaQ/UtfQ32beI+U4UN2VKfH8t6Rmqvo8ToBZUSHHWRQ2ImD4xC/baule/QpUg\nA3FuNcSROiq9+9efp8H3aZDFCwnPny+kfpu2qF2+5e1K2/AiGkrr6x5EyeljgbG1\nag7uCKBtV+zXoMJfN+RlOkBuaQKBgQDeynyn2dRhjuWrpbfs+JIIyfH01IxUWflm\nrk6PmQhxVO3oFCNZJteRDBhbkGHgxnXxri9XkStPhxlPVZcRTHzjnobYq98R2F7r\nT+HY4nbKLTL/su5D0PTFH0KEb0c05egsP8XIrHb//BwIOd+RJ5LbrTpDIXLlZHBe\n7w0/n8HSvwKBgQCLSMf1FLG3JisUjtE2YmLHJ4mMffny7CQom12ywLCD9bxQr06p\n7sDTdLgcG5AqeGtyEF7xa3p8wyKFhUNtokxCAt4UtBu/+oEhAvmSdKZAUTuKTETd\n1kSsqylS3Ug6BM1n5UtG6CTxOimXkOJbyslS2OSqnSI0B/JHEB8n8iz0sQKBgH3q\nk2mKg65fxQ6uKrWUB3VQLZ/iQS2rbHnMKjqek1b6WTvBpfjNKyifXWTixW70u9RM\nThV/xqq8AGIGTctJH4zGHBB5kynS0FLOYybhV6IMybYauu85Oh3u/Pk8q1IKXp4j\nrPUuBFPJeU5s5x5y712ZGkS2sulTSu9czHAZKsKhAoGADrj/N3yvqJjOtew0W/Gy\nnvHEYaKREe2XBFQFFmN9Bo0suGu/iBxbovv7SM4frYeXtOc70Ac6jjOik/lbj4hz\n3uGLY98Q+JA4Qu43pf4R30J9eV4Bf0Jxnzvc3jgahs7hIf6Zf37CKl5RqGX7lm0A\nvyygRIp1koZZdvGwU/XTA9c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-admin@waterwise-karnal.iam.gserviceaccount.com",
+  "client_id": "112475269196880860350",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-admin%40waterwise-karnal.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

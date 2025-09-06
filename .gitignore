@@ -12,6 +12,7 @@ env/
 venv/
 ENV/
 venv3/
+venv4/
 
 # ======================
 # Django Stuff
