@@ -13,6 +13,7 @@ venv/
 ENV/
 venv3/
 venv4/
+venv2/
 
 # ======================
 # Django Stuff
@@ -48,3 +49,8 @@ Thumbs.db
 # ======================
 node_modules/
 .github/
+
+
+
+
+*.json
