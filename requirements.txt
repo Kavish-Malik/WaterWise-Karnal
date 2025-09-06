@@ -6,6 +6,7 @@ certifi==2025.7.9
 cffi==1.17.1
 charset-normalizer==3.4.2
 cryptography==45.0.5
+dj-database-url==3.0.1
 Django==4.2.23
 django-allauth==65.10.0
 firebase_admin==7.1.0
