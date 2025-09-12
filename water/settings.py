@@ -3,6 +3,8 @@ import os
 import mimetypes
 from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
+import dj_database_url
+
 
 # Load .env file BEFORE using os.getenv()
 load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / '.env')
@@ -105,13 +107,14 @@ WSGI_APPLICATION = 'water.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),       # e.g. water
-        'USER': os.getenv('DB_USER'),       # e.g. django
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),       # e.g. 34.131.157.228
+        'HOST': os.getenv('DB_HOST'),
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
+
 
 
 # Password validation
@@ -162,3 +165,13 @@ print("Loaded SECRET_KEY:", SECRET_KEY)
 print("Loaded GOOGLE_CLIENT_ID:", os.getenv('GOOGLE_CLIENT_ID'))
 print("Loaded DB_USER:", os.getenv('DB_USER'))
 print("Loaded API_KEY:", API_KEY)
+
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://waterwise-karnal.onrender.com",
+    "https://www.waterwise-karnal.onrender.com",
+]
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
