@@ -1,7 +1,8 @@
 from django.core.management.base import BaseCommand
+from django.db import transaction
 from members.models import GroundwaterPlace
 
-# The dictionary of English to Hindi names (paste the dictionary here)
+# English → Hindi mapping
 place_name_translations = {
     'Alipur': 'अलीपुर',
     'Amin': 'अमीन',
@@ -134,20 +135,20 @@ place_name_translations = {
 
 
 class Command(BaseCommand):
-    help = 'Update GroundwaterPlace model with Hindi names'
+    help = "Update GroundwaterPlace with Hindi names (Render-safe)"
 
+    @transaction.atomic
     def handle(self, *args, **kwargs):
         hindi_district = "करनाल"
-        places = GroundwaterPlace.objects.all()
-        updated_count = 0
+        updated = 0
 
-        for place in places:
-            eng_name = place.name
-            if eng_name in place_name_translations:
-                place.name_hi = place_name_translations[eng_name]
+        for place in GroundwaterPlace.objects.all():
+            if place.name in place_name_translations:
+                place.name_hi = place_name_translations[place.name]
                 place.district_hi = hindi_district
-                place.save()
-                updated_count += 1
-                self.stdout.write(f"Updated: {eng_name} -> {place.name_hi}")
+                place.save(update_fields=["name_hi", "district_hi"])
+                updated += 1
 
-        self.stdout.write(f"Total updated: {updated_count}")
+        self.stdout.write(self.style.SUCCESS(
+            f"🇮🇳 Hindi names updated for {updated} places"
+        ))

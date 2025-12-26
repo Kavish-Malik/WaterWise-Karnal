@@ -1,26 +1,8 @@
-# =========================================
-# UPLOAD KARNAL DATA → RENDER POSTGRESQL
-# =========================================
-
-import os
-import django
-from datetime import datetime
+from django.core.management.base import BaseCommand
 from django.db import transaction
-from dotenv import load_dotenv
-
-# -----------------------------------------
-# DJANGO SETUP
-# -----------------------------------------
-load_dotenv()  # loads DATABASE_URL, SECRET_KEY locally
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "water.settings")
-django.setup()
+from datetime import datetime
 
 from members.models import GroundwaterPlace, GroundwaterData
-
-# -----------------------------------------
-# DATA (UNCHANGED – YOUR DATA)
-# -----------------------------------------
 
 places = [
     {'name': 'Alipur', 'type': 'village', 'district': 'Karnal'},
@@ -284,87 +266,46 @@ groundwater_levels = [
     {'name': 'Shekhpur', 'depth': 26.45, 'sample_date': '2022-08-01'},
     {'name': 'Shekhpura', 'depth': 18.07, 'sample_date': '2022-11-01'},
 ]
+class Command(BaseCommand):
+    help = "Upload Karnal groundwater data (one-time job)"
 
-DISTRICT = "Karnal"
-PARAMETER = "Water Level"
-UNIT = "m bgl"
+    @transaction.atomic
+    def handle(self, *args, **options):
+        self.stdout.write("🧹 Deleting old Karnal groundwater data...")
 
-# -----------------------------------------
-# DATABASE FUNCTIONS (REPLACED FIREBASE)
-# -----------------------------------------
+        GroundwaterData.objects.filter(
+            place__district="Karnal",
+            parameter="Water Level"
+        ).delete()
 
-@transaction.atomic
-def clear_karnal_entries():
-    deleted, _ = GroundwaterData.objects.filter(
-        place__district=DISTRICT,
-        parameter=PARAMETER
-    ).delete()
-    print(f"🧹 Deleted {deleted} previous groundwater entries for Karnal")
-
-
-@transaction.atomic
-def upload_places():
-    created = 0
-    for place in places:
-        _, is_created = GroundwaterPlace.objects.get_or_create(
-            name=place["name"],
-            district=place["district"],
-            defaults={"type": place["type"]}
-        )
-        if is_created:
-            created += 1
-
-    print(f"✅ Places ensured (new created: {created})")
-
-
-@transaction.atomic
-def upload_groundwater_levels():
-    inserted = 0
-
-    for entry in groundwater_levels:
-        try:
-            place = GroundwaterPlace.objects.get(
-                name=entry["name"],
-                district=DISTRICT
+        for place_data in places:
+            GroundwaterPlace.objects.get_or_create(
+                name=place_data["name"],
+                district=place_data["district"],
+                defaults={"type": place_data["type"]}
             )
-        except GroundwaterPlace.DoesNotExist:
-            continue  # skip if place missing
 
-        GroundwaterData.objects.create(
-            place=place,
-            parameter=PARAMETER,
-            value=entry["depth"],
-            unit=UNIT,
-            status="",
-            sample_date=datetime.strptime(
-                entry["sample_date"], "%Y-%m-%d"
-            ).date()
-        )
-        inserted += 1
+        count = 0
+        for entry in groundwater_levels:
+            try:
+                place = GroundwaterPlace.objects.get(
+                    name=entry["name"],
+                    district="Karnal"
+                )
 
-    print(f"🚀 Uploaded {inserted} groundwater records to Render DB")
+                GroundwaterData.objects.create(
+                    place=place,
+                    parameter="Water Level",
+                    value=entry["depth"],
+                    unit="m bgl",
+                    sample_date=datetime.strptime(
+                        entry["sample_date"], "%Y-%m-%d"
+                    ).date(),
+                )
+                count += 1
+            except GroundwaterPlace.DoesNotExist:
+                continue
 
-
-# -----------------------------------------
-# RUN (SAME ENTRY POINT)
-# -----------------------------------------
-if __name__ == "__main__":
-    clear_karnal_entries()
-    upload_places()
-    upload_groundwater_levels()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.stdout.write(self.style.SUCCESS(
+            f"✅ Uploaded {count} groundwater records successfully"
+        ))
