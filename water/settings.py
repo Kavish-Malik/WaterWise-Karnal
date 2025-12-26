@@ -34,7 +34,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 
 
 
-DEBUG = False
+DEBUG = True
 
 
 
@@ -218,16 +218,18 @@ WSGI_APPLICATION = 'water.wsgi.application'
 
 
 
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise RuntimeError("❌ DATABASE_URL is NOT set at runtime")
+
 DATABASES = {
-    "default": dj_database_url.config(
-        default=os.environ.get("DATABASE_URL"),
+    "default": dj_database_url.parse(
+        DATABASE_URL,
         conn_max_age=600,
-        ssl_require=True,
     )
 }
 
-if not os.environ.get("DATABASE_URL"):
-    raise RuntimeError("DATABASE_URL is not set")
 
 
 
